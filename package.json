@@ -1,0 +1,25 @@
+{
+  "name": "Lime Template Ubuntu Sass",
+  "version": "1.0.0",
+  "description": "Lime survey template with bootstrap+sass+gulp based on ubuntu_orange Edit",
+  "author": "Miquel Adell",
+  "keywords": [
+    "limesurvey",
+    "css",
+    "gulp",
+    "scss",
+    "sass",
+    "mobile-first",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MiquelAdell/ubuntu_sass"
+  },
+  "homepage": "http://miqueladell.com",
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sourcemaps": "^1.9.1",
+    "wiredep": "^4.0.0"
+  }
+}
