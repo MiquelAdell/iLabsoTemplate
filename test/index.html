@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<!-- startpage.pstl -->
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" type="text/css" href="assets/font-awesome.min.css" />
+<!-- START OF CUSTOM STYLES -->
+<link rel="stylesheet" type="text/css" href="../dist/styles/vendor.css" />
+<link rel="stylesheet" type="text/css" href="../dist/styles/main.css" />
+<!-- END OF CUSTOM STYLES -->
+<link rel="stylesheet" type="text/css" href="/expressions.css" />
+
+<script type="text/javascript" src="assets/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="assets/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="assets/jquery.ui.touch-punch.min.js"></script>
+<!-- START OF CUSTOM SCRIPTS -->
+<script type="text/javascript" src="../dist/scripts/vendor.js"></script>
+<script type="text/javascript" src="../dist/scripts/main.js"></script>
+<!-- END OF CUSTOM SCRIPTS -->
+<script type="text/javascript" src="/assets/survey_runtime.js"></script>
+<script type="text/javascript" src="/assets/expression.js"></script>
+<script type="text/javascript" src="/assets/em_javascript.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+LSvar={"bFixNumAuto":1,"bNumRealValue":0,"sLEMradix":"."};
+/*]]>*/
+</script>
+<title>Slightly Trickier Sample Survey</title>
+<meta name="generator" content="LimeSurvey http://www.limesurvey.org" />
+
+<!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
+
+
+<!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
+
+<link rel="shortcut icon" href="/templates/ubuntu_orange/favicon.ico" />
+
+</head>
+<body class="default lang-en questionbyquestion bootstrap-engine  showprogress showqnumcode-X"><script type="text/javascript">
+/*<![CDATA[*/
+setJsVar();
+/*]]>*/
+</script>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="topsurveymenubar">
+        <div class="navbar-header col-xs-12 col-sm-6 col-lg-8">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand col-xs-10 col-sm-12" >Slightly Trickier Sample Survey</span>
+        </div>
+
+        <div id="navbar" class="navbar-collapse collapse col-xs-12">
+            <ul class="nav navbar-nav">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#" id="clearallbtnlink">Exit and clear survey</a></li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </nav>
+
+
+    <!-- Top container -->
+    <div id="topContainer" class="jumbotron">
+        <div class="container">
+
+
+        </div>
+    </div>
+
+    <div class="outerframe container" id="outerframeContainer">
+
+        <div class="row" id="main-row">
+
+            <div class='col-xs-12' id="yii-flash-message">
+
+            </div>
+
+            <div class="col-sm-12 col-centered" id="main-col">
+<!-- end of startpage.pstl -->
+<form id="limesurvey" name="limesurvey" autocomplete="off" class="frontend_helper" action="/index.php/527214" method="post">
+<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN" /><div class="alert alert-danger" role="alert"  id="checkjavascript">
+    <noscript role='alert' id='checkjavascript'><p class='alert alert-danger warningjs'>Caution: JavaScript execution is disabled in your browser. You may not be able to answer all questions in this survey. Please, verify your browser parameters.</p></noscript>
+</div>
+<script>
+document.getElementById("checkjavascript").style.display = 'none';
+</script>
+<!-- Survey Description -->
+<div class="row" id="welcome-container">
+    <div class="col-sm-12 ">
+        <h1>Slightly Trickier Sample Survey</h1><br />
+        <p class='surveydescription text-info'><p>This is a <strong><em>sample survey</em></strong> designed for testing LimeSurvey.</p>
+
+<p>One of the first things you'll need to do, in order to make this work properly, is to fix up the "reference to previous answers" codes in the first two questions of Group 2. These questions contain (INSERTANS:1X2X3) code that needs the numbers changed to match questions 1 and 3 of Group 1. In order to find this number out, browse to question 1 of Group 1, and then copy the code from the URL bar in your web browser, starting from the number after "SID="</p>
+
+<p><strong><em>IE:</em></strong> 29975&gid=2&qid=4</p>
+
+<p>Then, replace the "&gid=" with an X, and replace the "&qid=" with an X. So you should have:</p>
+
+<p>29975X2X4</p>
+
+<p>Then, you can replace the number in the curly brackets of question 1, group 2, so that it says:</p>
+
+<p>(INSERTANS:29975X2X4)</p>
+
+<p>Do the same with the other codes in the questions.</p>
+
+<p>More information on using the answers to previous questions in your questions is available in the documentation.</p>
+</p>
+    </div>
+</div>
+
+<!-- Survey Welcome -->
+<div class="row survey-welcome">
+    <div class="col-sm-12 ">
+        <p class='surveywelcome'>
+            Welcome to the LimeSurvey Sample Survey
+        </p>
+    </div>
+</div>
+
+<!-- Question number -->
+<div class="row questions-number">
+    <div class="col-sm-12">
+        <p class="x-questions">There are 9 questions in this survey.</p>
+    </div>
+</div>
+
+<div class="row privacy">
+    <div class="col-sm-12 col-centered">
+        <p><span class='privacy-title'>A note on privacy</span><span class='privacy-body'><br />This survey is anonymous.<br />The record of your survey responses does not contain any identifying information about you, unless a specific survey question explicitly asked for it. If you used an identifying token to access this survey, please rest assured that this token will not be stored together with your responses. It is managed in a separate database and will only be updated to indicate whether you did (or did not) complete this survey. There is no way of matching identification tokens with survey responses.</span></p>
+    </div>
+</div>
+
+<!-- Navigator hidden-xs-->
+<div class="col-xs-12">
+    <div class="row" id="navigator-container">
+        <div class="col-xs-12 save-all hidden">
+
+            <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="This action need confirmation.">Exit and clear survey</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall" /><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Are you sure you want to clear all your responses?</label>
+        </div>
+        <div class="col-xs-12 save-all">
+            <hr/>
+        </div>
+        <div class="col-xs-6 save-all text-left">
+
+        </div>
+        <div class="col-xs-6 save-all text-right">
+            <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Next</button>
+        </div>
+    </div>
+</div>
+
+<input type='hidden' name='sid' value='527214' id='sid' />
+
+<input type='hidden' name='lastgroupname' value='_WELCOME_SCREEN_' id='lastgroupname' />
+<input type='hidden' name='LEMpostKey' value='2052670343' id='LEMpostKey' />
+<input type='hidden' name='thisstep' id='thisstep' value='0' />
+<!--frontendhelper --></form>        </div> <!-- main-col -->
+    </div><!-- main-row -->
+</div><!-- outerframe -->
+
+<!-- Bootstrap Modal Alert -->
+<div id="bootstrap-alert-box-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="min-height:40px;">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">&nbsp;</h4>
+            </div>
+            <div class="modal-body"><p></p></div>
+            <div class="modal-footer">
+                <a href="#" data-dismiss="modal" class="btn btn-default">Close</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript'>
+<!--
+var LEMmode='question';
+function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+
+}
+//-->
+</script>
+<input type='hidden' id='aQuestionsWithDependencies' data-qids='[]' />
+
+	<script type="text/javascript" src="/scripts/deactivatedebug.js"></script>
+<script type="text/javascript" src="/tmp/assets/3a154f14/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+jQuery('body').popover({'selector':'a[rel=popover]'});
+jQuery('body').tooltip({'selector':'a[rel=tooltip]'});
+/*]]>*/
+</script>
+</body>
+</html>
+<!-- end of frontend_helper /  display_first_page -->

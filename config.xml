@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <metadatas>
-        <name>Ubuntu Sass</name>
-        <creationDate>08/01/2016</creationDate>
-        <author>Louis-Sébastien Gac Artigas</author>
-        <authorEmail>louis.gac@limesurvey.org</authorEmail>
-        <authorUrl>http://www.limesurvey.org</authorUrl>
-        <copyright>Copyright (C) 2005 - 2016 LimeSurvey Gmbh, Inc. All rights reserved.</copyright>
+        <name>iLabsoTemplate</name>
+        <creationDate>2017-01-04 10:00:00</creationDate>
+        <author>Miquel Adell Borràs</author>
+        <authorEmail>miquel@miqueladell.com</authorEmail>
+        <authorUrl>http://www.miqueladell.com</authorUrl>
+        <copyright>Copyright (C) 2017 Miquel Adell. Some rights reserved.</copyright>
         <license>GNU General Public License version 2 or later</license>
         <version>1.0</version>
-        <description>LimeSurvey Template.</description>
-        <last_update>2016-05-13 10:46:00</last_update>
+        <description>LimeSurvey Template</description>
+        <last_update>2017-01-14 10:00:00</last_update>
     </metadatas>
 
     <!--
@@ -19,23 +19,25 @@
     -->
     <files>
         <css>
+            <filename>dist/styles/vendor.css</filename>
             <filename>dist/styles/main.css</filename>
         </css>
         <js>
-            <filename>scripts/template.js</filename>
-            <filename>scripts/bootstrap-slider.js</filename>
+            <filename>dist/scripts/vendor.js</filename>
+            <filename>dist/scripts/main.js</filename>
         </js>
     </files>
 
     <!-- For template editor -->
     <files_editable>
-            <css>
-                <filename>dist/styles/main.css</filename>
-            </css>
-            <js>
-                <filename>scripts/template.js</filename>
-                <filename>scripts/bootstrap-slider.js</filename>
-            </js>
+        <css>
+            <filename>dist/styles/vendor.css</filename>
+            <filename>dist/styles/main.css</filename>
+        </css>
+        <js>
+            <filename>dist/scripts/vendor.js</filename>
+            <filename>dist/scripts/main.js</filename>
+        </js>
     </files_editable>
 
     <engine>
