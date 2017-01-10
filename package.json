@@ -1,5 +1,5 @@
 {
-  "name": "iLabsoTemplate",
+  "name": "ilabsotemplate",
   "version": "1.0.0",
   "license": "GPL-3.0",
   "description": "Lime survey template with bootstrap+sass+gulp based on ubuntu_orange",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MiquelAdell/iLabsoTemplate"
+    "url": "https://github.com/MiquelAdell/ilabsotemplate"
   },
   "homepage": "http://miqueladell.com",
   "devDependencies": {
@@ -34,6 +34,7 @@
     "gulp-sass": "^3.0.0",
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
+    "gulp-zip": "^3.2.0",
     "main-bower-files": "^2.13.1",
     "run-sequence": "^1.2.2",
     "wiredep": "^4.0.0"

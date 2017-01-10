@@ -15,7 +15,7 @@
     "mobile-first",
     "responsive"
   ],
-  "homepage": "https://github.com/MiquelAdell/iLabsoTemplate",
+  "homepage": "https://github.com/MiquelAdell/ilabsotemplate",
   "ignore": [
     "**/.*",
     "node_modules",

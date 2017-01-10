@@ -18,6 +18,7 @@ var sourcemaps     = require('gulp-sourcemaps');
 var uglify         = require('gulp-uglify');
 var wiredep        = require('wiredep').stream;
 var runSequence    = require('run-sequence');
+var zip            = require('gulp-zip');
 
 
 
@@ -126,4 +127,15 @@ gulp.task('build', function (cb) {
   runSequence('clean', ['vendor-styles', 'vendor-scripts', 'styles', 'scripts', 'icons'], cb);
 });
 
-gulp.task('default', ['clean', 'build']);
+gulp.task('zip', function (cb) {
+  runSequence('build', ['do-zip'], cb);
+});
+
+gulp.task('do-zip', function(cb){
+	return gulp
+		.src('config.xml, favicon.ico, ilabsotemplate.png, logo_pdf.png, poweredby.png, preview.png, readme.md, views/**, files/**, dist/**')
+        .pipe(zip('ilabsotemplate.zip'))
+        .pipe(gulp.dest('./'));
+});
+
+gulp.task('default', ['build']);
