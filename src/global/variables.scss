@@ -1,12 +1,17 @@
-$font-size-root: 16px !default;
+$font-size-root: 16px ;
 
-$font-family-sans-serif: Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
-$font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
+@import url('https://fonts.googleapis.com/css?family=Lora|Ubuntu');
+
+$font-family-sans-serif: "Ubuntu", sans-serif;
+$font-family-serif:      'Lora', serif;
+
+$font-family-base:       $font-family-sans-serif;
+$headings-font-family:   $font-family-serif;
+
 
 $brand-primary: hsla(187, 100%, 42%, 1);
 $brand-inverse: invert($brand-primary);
-
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+// $brand-success:             #5cb85c !default;
+// $brand-info:                #5bc0de !default;
+// $brand-warning:             #f0ad4e !default;
+// $brand-danger:              #d9534f !default;

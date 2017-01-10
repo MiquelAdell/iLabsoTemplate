@@ -120,7 +120,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist'], cb);
+	return del(['dist','ilabsotemplate.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
