@@ -1,11 +1,10 @@
 $font-size-root: 16px !default;
 
-
 $font-family-sans-serif: Verdana, Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 
-$brand-primary: hsla(50, 20%, 50%, 1);
-$brand-inverse: hsla(200, 100%, 25%, 1);
+$brand-primary: hsla(187, 100%, 42%, 1);
+$brand-inverse: invert($brand-primary);
 
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
