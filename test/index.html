@@ -71,9 +71,14 @@ setJsVar();
 
 
     <!-- Top container -->
-    <div id="topContainer" class="jumbotron">
+    <div id="topContainer" class="jumbotron" style="top: 50px;">
         <div class="container">
 
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="22" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 22%;">
+            22%
+        </div>
+    </div>
 
         </div>
     </div>
@@ -88,60 +93,156 @@ setJsVar();
 
             <div class="col-sm-12 col-centered" id="main-col">
 <!-- end of startpage.pstl -->
-<form id="limesurvey" name="limesurvey" autocomplete="off" class="frontend_helper" action="/index.php/527214" method="post">
-<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN" /><div class="alert alert-danger" role="alert"  id="checkjavascript">
-    <noscript role='alert' id='checkjavascript'><p class='alert alert-danger warningjs'>Caution: JavaScript execution is disabled in your browser. You may not be able to answer all questions in this survey. Please, verify your browser parameters.</p></noscript>
-</div>
-<script>
-document.getElementById("checkjavascript").style.display = 'none';
+
+
+<script type="text/javascript">
+  $("body").addClass("page-odd");
 </script>
-<!-- Survey Description -->
-<div class="row" id="welcome-container">
-    <div class="col-sm-12 ">
-        <h1>Slightly Trickier Sample Survey</h1><br />
-        <p class='surveydescription text-info'><p>This is a <strong><em>sample survey</em></strong> designed for testing LimeSurvey.</p>
+<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN" />
 
-<p>One of the first things you'll need to do, in order to make this work properly, is to fix up the "reference to previous answers" codes in the first two questions of Group 2. These questions contain (INSERTANS:1X2X3) code that needs the numbers changed to match questions 1 and 3 of Group 1. In order to find this number out, browse to question 1 of Group 1, and then copy the code from the URL bar in your web browser, starting from the number after "SID="</p>
+            <!-- INPUT NAMES -->
+            <input type='hidden' name='fieldnames' value='527214X1X1' id='fieldnames' />
+<button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+<noscript role='alert' id='checkjavascript'><p class='alert alert-danger warningjs'>Caution: JavaScript execution is disabled in your browser. You may not be able to answer all questions in this survey. Please, verify your browser parameters.</p></noscript>
 
-<p><strong><em>IE:</em></strong> 29975&gid=2&qid=4</p>
 
-<p>Then, replace the "&gid=" with an X, and replace the "&qid=" with an X. So you should have:</p>
+<!-- START THE GROUP (in SurveyRunTime ) -->
 
-<p>29975X2X4</p>
 
-<p>Then, you can replace the number in the curly brackets of question 1, group 2, so that it says:</p>
+<div id='group-0' class='row'>
+<!-- Start group -->
+<div class="col-xs-12 group-container">
+    <h3 class="group-name">Group 1</h3>
+</div>
 
-<p>(INSERTANS:29975X2X4)</p>
 
-<p>Do the same with the other codes in the questions.</p>
 
-<p>More information on using the answers to previous questions in your questions is available in the documentation.</p>
-</p>
+
+<!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
+<!-- Question -->
+    <div  id="question1" class="text-short  mandatory col-xs-12 question-container">
+
+        <!-- Question title -->
+        <div class="row question-wrapper question-title-container">
+            <div class="col-sm-12 questiontext">
+                <div class="qnumcode question-text">
+                <span class="text-danger asterisk"></span>
+ What is your name?
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Question valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+
+
+
+            </div>
+            <div class="col-sm-12 questionvalidcontainer">
+                <div class="questionhelp text-danger" role="alert" id="vmsg_2">
+                  <div id="vmsg_2_default" class="em_default emtip error">
+                    <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+                    Only numbers may be entered in this field.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+                <div class="questionhelp text-info" role="alert" id="vmsg_2">
+    <div id="vmsg_2_default" class="em_default emtip good">
+
+    <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+    Only numbers may be entered in this field.</div>
+</div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Answer -->
+        <div class="row question-wrapper answer-container">
+            <div class="col-sm-12 answer">
+
+<div class="question answer-item text-item  inputwidth-12 col-sm-12 form-horizontal short-free-text">
+
+    <div class='form-group'>
+
+        <!-- Label -->
+        <label class='control-label col-xs-12 col-sm-2 hide label' for='answer527214X1X1' >
+            Your answer        </label>
+
+        <!-- Prefix -->
+
+        <!-- Input -->
+        <div class='col-xs-12 col-sm-7'>
+            <input
+                class="form-control text "
+                type="text"
+                size="12"
+                name="527214X1X1"
+                id="answer527214X1X1"
+                value=""
+                                onkeyup="checkconditions(this.value, this.name, this.type)"
+            />
+        </div>
+
+        <!-- Suffix -->
+
     </div>
 </div>
 
-<!-- Survey Welcome -->
-<div class="row survey-welcome">
-    <div class="col-sm-12 ">
-        <p class='surveywelcome'>
-            Welcome to the LimeSurvey Sample Survey
-        </p>
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper question-help-container">
+            <div class="col-sm-12 question-help">
+
+            </div>
+        </div>
     </div>
+<input type='hidden' name='lastanswer' value='527214X1X1' id='lastanswer' />
+
+
+<!-- END THE GROUP -->
+<!-- endgroup -->
+
+
 </div>
 
-<!-- Question number -->
-<div class="row questions-number">
-    <div class="col-sm-12">
-        <p class="x-questions">There are 9 questions in this survey.</p>
-    </div>
-</div>
+<script type='text/javascript'>
+<!--
+var LEMmode='question';
+var LEMqid=1;
+function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+  relChange1=false;
+  relChangeG0=false;
 
-<div class="row privacy">
-    <div class="col-sm-12 col-centered">
-        <p><span class='privacy-title'>A note on privacy</span><span class='privacy-body'><br />This survey is anonymous.<br />The record of your survey responses does not contain any identifying information about you, unless a specific survey question explicitly asked for it. If you used an identifying token to access this survey, please rest assured that this token will not be stored together with your responses. It is managed in a separate database and will only be updated to indicate whether you did (or did not) complete this survey. There is no way of matching identification tokens with survey responses.</span></p>
-    </div>
-</div>
+}
+//-->
+</script>
+<input type='hidden' id='relevance1' name='relevance1' value='1'/>
+<input type='hidden' id='relevanceG0' name='relevanceG0' value='1'/>
+<input type='hidden' id='aQuestionsWithDependencies' data-qids='[]' />
 
+<!-- PRESENT THE NAVIGATOR -->
 <!-- Navigator hidden-xs-->
 <div class="col-xs-12">
     <div class="row" id="navigator-container">
@@ -153,7 +254,7 @@ document.getElementById("checkjavascript").style.display = 'none';
             <hr/>
         </div>
         <div class="col-xs-6 save-all text-left">
-
+            <button type="submit" id="moveprevbtn" value="moveprev" name="moveprev" accesskey="p" class="submit button btn btn-lg  btn-default">Previous</button>
         </div>
         <div class="col-xs-6 save-all text-right">
             <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Next</button>
@@ -161,12 +262,687 @@ document.getElementById("checkjavascript").style.display = 'none';
     </div>
 </div>
 
+<p style='text-align:center' class='error'>This survey is currently not active. You will not be able to save your responses.</p>
+<!-- generated in SurveyRuntimeHelper --><input type='hidden' name='thisstep' value='1' id='thisstep' />
 <input type='hidden' name='sid' value='527214' id='sid' />
+<input type='hidden' name='start_time' value='1483967691' id='start_time' />
+<input type='hidden' name='LEMpostKey' value='1829538143' id='LEMpostKey' />
 
-<input type='hidden' name='lastgroupname' value='_WELCOME_SCREEN_' id='lastgroupname' />
-<input type='hidden' name='LEMpostKey' value='2052670343' id='LEMpostKey' />
-<input type='hidden' name='thisstep' id='thisstep' value='0' />
-<!--frontendhelper --></form>        </div> <!-- main-col -->
+<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN">
+
+            <!-- INPUT NAMES -->
+            <input type="hidden" name="fieldnames" value="527214X1X3" id="fieldnames">
+<button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+<noscript role="alert" id="checkjavascript">&lt;p class='alert alert-danger warningjs'&gt;Caution: JavaScript execution is disabled in your browser. You may not be able to answer all questions in this survey. Please, verify your browser parameters.&lt;/p&gt;</noscript>
+
+
+<!-- START THE GROUP (in SurveyRunTime ) -->
+
+
+<div id="group-0" class="row">
+<!-- Start group -->
+<div class="col-xs-12 group-container">
+    <h3 class="group-name">Group 1</h3>
+</div>
+
+
+
+
+<!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
+<!-- Question -->
+    <div id="question3" class="list-radio  mandatory col-xs-12 question-container">
+
+        <!-- Question title -->
+        <div class="row question-wrapper question-title-container">
+            <div class="col-sm-12 questiontext">
+                <div class="qnumcode question-text">
+                <span class="text-danger asterisk"></span>
+ What is your age group?
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Question valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Answer -->
+        <div class="row question-wrapper answer-container">
+            <div class="col-sm-12 answer">
+
+<!-- List Radio -->
+
+<!-- answer -->
+<div class="list-unstyled radio-list answers-list">
+
+
+<!-- answer_row -->
+<div id="javatbd527214X1X30-14" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="0-14" name="527214X1X3" id="answer527214X1X30-14" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X30-14">
+    <label for="answer527214X1X30-14" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X30-14">
+        0-14 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X315-19" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="15-19" name="527214X1X3" id="answer527214X1X315-19" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X315-19">
+    <label for="answer527214X1X315-19" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X315-19">
+        15-19 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X320-24" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="20-24" name="527214X1X3" id="answer527214X1X320-24" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X320-24">
+    <label for="answer527214X1X320-24" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X320-24">
+        20-24 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X325-29" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="25-29" name="527214X1X3" id="answer527214X1X325-29" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X325-29">
+    <label for="answer527214X1X325-29" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X325-29">
+        25-29 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X330-34" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="30-34" name="527214X1X3" id="answer527214X1X330-34" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X330-34">
+    <label for="answer527214X1X330-34" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X330-34">
+        30-34 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X335-39" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="35-39" name="527214X1X3" id="answer527214X1X335-39" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X335-39">
+    <label for="answer527214X1X335-39" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X335-39">
+        35-39 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X340-44" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="40-44" name="527214X1X3" id="answer527214X1X340-44" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X340-44">
+    <label for="answer527214X1X340-44" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X340-44">
+        40-44 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X345-49" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="45-49" name="527214X1X3" id="answer527214X1X345-49" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X345-49">
+    <label for="answer527214X1X345-49" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X345-49">
+        45-49 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X350-54" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="50-54" name="527214X1X3" id="answer527214X1X350-54" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X350-54">
+    <label for="answer527214X1X350-54" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X350-54">
+        50-54 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X355-59" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="55-59" name="527214X1X3" id="answer527214X1X355-59" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X355-59">
+    <label for="answer527214X1X355-59" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X355-59">
+        55-59 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X360-64" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="60-64" name="527214X1X3" id="answer527214X1X360-64" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X360-64">
+    <label for="answer527214X1X360-64" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X360-64">
+        60-64 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X365-69" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="65-69" name="527214X1X3" id="answer527214X1X365-69" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X365-69">
+    <label for="answer527214X1X365-69" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X365-69">
+        65-69 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X370-74" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="70-74" name="527214X1X3" id="answer527214X1X370-74" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X370-74">
+    <label for="answer527214X1X370-74" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X370-74">
+        70-74 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X375-79" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="75-79" name="527214X1X3" id="answer527214X1X375-79" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X375-79">
+    <label for="answer527214X1X375-79" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X375-79">
+        75-79 Years    </div>
+</div>
+<!-- end of answer_row -->
+
+<!-- answer_row -->
+<div id="javatbd527214X1X380-" class="col-xs-12 form-group answer-item radio-item radio">
+    <input class="radio" type="radio" value="80-" name="527214X1X3" id="answer527214X1X380-" onclick="if (document.getElementById('answer527214X1X3othertext') != null) document.getElementById('answer527214X1X3othertext').value='';checkconditions(this.value, this.name, this.type)" aria-labelledby="label-answer527214X1X380-">
+    <label for="answer527214X1X380-" class="control-label radio-label"></label>
+
+    <!--
+         The label text is provided inside a div,
+         so final user can add paragraph, div, or whatever he wants in the subquestion text
+         This field is related to the input thanks to attribute aria-labelledby
+    -->
+    <div class="label-text label-clickable" id="label-answer527214X1X380-">
+        80 and over    </div>
+</div>
+<!-- end of answer_row -->
+
+    <input type="hidden" name="java527214X1X3" id="java527214X1X3" value="20-24">
+</div>
+<!-- end of answer -->
+
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper question-help-container">
+            <div class="col-sm-12 question-help">
+
+            </div>
+        </div>
+    </div>
+<input type="hidden" name="lastanswer" value="527214X1X3" id="lastanswer">
+
+
+<!-- END THE GROUP -->
+<!-- endgroup -->
+
+
+</div>
+
+<script type="text/javascript">
+<!--
+var LEMmode='question';
+var LEMqid=3;
+function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+  relChange3=false;
+  relChangeG0=false;
+
+}
+//-->
+</script>
+<input type="hidden" id="relevance3" name="relevance3" value="1">
+<input type="hidden" id="relevanceG0" name="relevanceG0" value="1">
+<input type="hidden" id="aQuestionsWithDependencies" data-qids="[]">
+
+<!-- PRESENT THE NAVIGATOR -->
+<!-- Navigator hidden-xs-->
+<div class="col-xs-12">
+    <div class="row" id="navigator-container">
+        <div class="col-xs-12 save-all hidden">
+
+            <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="This action need confirmation.">Exit and clear survey</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall"><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Are you sure you want to clear all your responses?</label>
+        </div>
+        <div class="col-xs-12 save-all">
+            <hr>
+        </div>
+        <div class="col-xs-6 save-all text-left">
+            <button type="submit" id="moveprevbtn" value="moveprev" name="moveprev" accesskey="p" class="submit button btn btn-lg  btn-default">Previous</button>
+        </div>
+        <div class="col-xs-6 save-all text-right">
+            <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Next</button>
+        </div>
+    </div>
+</div>
+
+<p style="text-align:center" class="error">This survey is currently not active. You will not be able to save your responses.</p>
+<!-- generated in SurveyRuntimeHelper --><input type="hidden" name="thisstep" value="2" id="thisstep">
+<input type="hidden" name="sid" value="527214" id="sid">
+<input type="hidden" name="start_time" value="1483967784" id="start_time">
+<input type="hidden" name="LEMpostKey" value="689394989" id="LEMpostKey">
+
+
+<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN">
+
+            <!-- INPUT NAMES -->
+            <input type="hidden" name="fieldnames" value="527214X1X2" id="fieldnames">
+<button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+<noscript role="alert" id="checkjavascript">&lt;p class='alert alert-danger warningjs'&gt;Caution: JavaScript execution is disabled in your browser. You may not be able to answer all questions in this survey. Please, verify your browser parameters.&lt;/p&gt;</noscript>
+
+
+<!-- START THE GROUP (in SurveyRunTime ) -->
+
+
+<div id="group-0" class="row">
+<!-- Start group -->
+<div class="col-xs-12 group-container">
+    <h3 class="group-name">Group 1</h3>
+</div>
+
+
+
+
+<!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
+<!-- Question -->
+    <div id="question2" class="numeric  col-xs-12 question-container">
+
+        <!-- Question title -->
+        <div class="row question-wrapper question-title-container">
+            <div class="col-sm-12 questiontext">
+                <div class="qnumcode question-text">
+                 And for our records, specifically how old are you?
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Question valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+                <div class="text-info questionhelp" role="alert" id="vmsg_2">
+    <div id="vmsg_2_default" class="em_default emtip good">
+
+    <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+    Only numbers may be entered in this field.</div>
+</div>
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Answer -->
+        <div class="row question-wrapper answer-container">
+            <div class="col-sm-12 answer">
+                <!-- Numerical -->
+
+<!-- answer -->
+<p class="question answer-item text-item numeric-item  maxchars maxchars-3 col-sm-12">
+    <label for="answer527214X1X2" class="hide label">
+            Your answer    </label>
+
+
+    <input class="form-control text numeric empty em_sq_validation good" type="text" size="12" name="527214X1X2" title="Only numbers may be entered in this field." id="answer527214X1X2" value="" onkeyup="fixnum_checkconditions(this.value, this.name, this.type,'onchange', 0);" maxlength="3">
+        </p>
+<!-- end of answer -->
+
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper question-help-container">
+            <div class="col-sm-12 question-help">
+                <!-- views/survey/system/questionhelp -->
+<div class="text-info questionhelp">
+    <span class="fa fa-question-circle" aria-hidden="true"></span>
+    &nbsp;<i>This is a <b>numerical</b> question. Only numbers may be entered</i>. There is also a question_attribute added to the question to limit the characters to no more than 3. This, of course, limits the possible answer to no more than 999, which seems reasonable for an age question.</div>
+
+            </div>
+        </div>
+    </div>
+<input type="hidden" name="lastanswer" value="527214X1X2" id="lastanswer">
+
+
+<!-- END THE GROUP -->
+<!-- endgroup -->
+
+
+</div>
+
+<script type="text/javascript">
+<!--
+var LEMmode='question';
+var LEMqid=2;
+function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+  relChange2=false;
+  relChangeG0=false;
+  LEMrel2(sgqa);
+
+}
+function LEMrel2(sgqa){
+  var UsesVars = '  java527214X1X2 ';
+  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+  return;
+ }
+
+if (1)
+{
+  LEMval2(sgqa);
+  relChange2=true;
+  $('#relevance2').val('1');
+}
+$('#relevance2').val('1');  // always true
+}
+function LEMval2(sgqa){
+  isValidSum2=true;
+  isValidOther2=true;
+  isValidOtherComment2=true;
+
+  if((((LEMis_numeric(LEMval('527214X1X2.NAOK') ) || LEMempty(LEMval('527214X1X2.NAOK') ))))){
+    $('#vmsg_2_default').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#vmsg_2_default').removeClass('good').addClass('error').trigger('classChangeError');
+    isValidOther2=false;
+  }
+
+  if(isValidSum2){
+    $('#totalvalue_2').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#totalvalue_2').removeClass('good').addClass('error').trigger('classChangeError');
+  }
+
+  if(isValidOther2){
+    $('#question2 :input').addClass('em_sq_validation').removeClass('error').addClass('good').trigger('classChangeGood');
+  }
+  else {
+    $('#question2 :input').addClass('em_sq_validation').removeClass('good').addClass('error').trigger('classChangeError');
+  }
+}
+var LEMalias2varName = {
+'q03':'java527214X1X2',
+'527214X1X2':'java527214X1X2'};
+var LEMvarNameAttr = {
+'java527214X1X2':{ 'jsName':'java527214X1X2','jsName_on':'answer527214X1X2','sgqa':'527214X1X2','qid':2,'gid':1,'type':'N','default':'','rowdivid':'','onlynum':'1','gseq':0}};
+//-->
+</script>
+<input type="hidden" id="relevance2" name="relevance2" value="1">
+<input type="hidden" id="relevanceG0" name="relevanceG0" value="1">
+<input type="hidden" id="aQuestionsWithDependencies" data-qids="[]">
+
+<!-- PRESENT THE NAVIGATOR -->
+<!-- Navigator hidden-xs-->
+<div class="col-xs-12">
+    <div class="row" id="navigator-container">
+        <div class="col-xs-12 save-all hidden">
+
+            <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="This action need confirmation.">Exit and clear survey</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall"><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Are you sure you want to clear all your responses?</label>
+        </div>
+        <div class="col-xs-12 save-all">
+            <hr>
+        </div>
+        <div class="col-xs-6 save-all text-left">
+            <button type="submit" id="moveprevbtn" value="moveprev" name="moveprev" accesskey="p" class="submit button btn btn-lg  btn-default">Previous</button>
+        </div>
+        <div class="col-xs-6 save-all text-right">
+            <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Next</button>
+        </div>
+    </div>
+</div>
+
+<p style="text-align:center" class="error">This survey is currently not active. You will not be able to save your responses.</p>
+<!-- generated in SurveyRuntimeHelper --><input type="hidden" name="thisstep" value="3" id="thisstep">
+<input type="hidden" name="sid" value="527214" id="sid">
+<input type="hidden" name="start_time" value="1483967870" id="start_time">
+<input type="hidden" name="LEMpostKey" value="39409363" id="LEMpostKey">
+
+
+<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN">
+
+            <!-- INPUT NAMES -->
+            <input type="hidden" name="fieldnames" value="527214X2X4" id="fieldnames">
+<button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+<noscript role="alert" id="checkjavascript">&lt;p class='alert alert-danger warningjs'&gt;Caution: JavaScript execution is disabled in your browser. You may not be able to answer all questions in this survey. Please, verify your browser parameters.&lt;/p&gt;</noscript>
+
+
+<!-- START THE GROUP (in SurveyRunTime ) -->
+
+
+<div id="group-1" class="row">
+<!-- Start group -->
+<div class="col-xs-12 group-container">
+    <h3 class="group-name">Group 2</h3>
+</div>
+
+
+
+
+<!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
+<!-- Question -->
+    <div id="question4" class="text-long  col-xs-12 question-container">
+
+        <!-- Question title -->
+        <div class="row question-wrapper question-title-container">
+            <div class="col-sm-12 questiontext">
+                <div class="qnumcode question-text">
+                 Hi, test please tell us a little about yourself. What was your first job, and did you enjoy it?
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Question valid message -->
+        <div class="row question-wrapper">
+            <div class="col-sm-12 questionvalidcontainer">
+
+
+
+            </div>
+        </div>
+
+
+        <!-- Answer -->
+        <div class="row question-wrapper answer-container">
+            <div class="col-sm-12 answer">
+                <!-- Long Free Text -->
+
+<!-- answer -->
+<p class="question answer-item text-item  inputwidth-12 col-sm-12">
+    <label for="answer527214X2X4" class="hide label">
+        Your answer    </label>
+
+<textarea class="form-control textarea  empty" name="527214X2X4" id="answer527214X2X4" rows="5" cols="12" onkeyup="checkconditions(this.value, this.name, this.type)"></textarea>
+</p>
+<!-- end of answer -->
+
+            </div>
+        </div>
+
+        <!-- Question help -->
+        <div class="row question-wrapper question-help-container">
+            <div class="col-sm-12 question-help">
+
+            </div>
+        </div>
+    </div>
+<input type="hidden" name="lastanswer" value="527214X2X4" id="lastanswer">
+
+
+<!-- END THE GROUP -->
+<!-- endgroup -->
+
+
+</div>
+
+<script type="text/javascript">
+<!--
+var LEMmode='question';
+var LEMqid=4;
+function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+if (typeof LEM_initialized == 'undefined') {
+LEM_initialized=true;
+LEMsetTabIndexes();
+}
+if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+  last_evt_type='onchange';
+  last_sgqa=sgqa;
+  return;
+}
+last_evt_type = evt_type;
+last_sgqa=sgqa;
+  relChange4=false;
+  relChangeG1=false;
+
+}
+//-->
+</script>
+<input type="hidden" id="relevance4" name="relevance4" value="1">
+<input type="hidden" id="relevanceG1" name="relevanceG1" value="1">
+<input type="hidden" id="aQuestionsWithDependencies" data-qids="[]">
+
+<!-- PRESENT THE NAVIGATOR -->
+<!-- Navigator hidden-xs-->
+<div class="col-xs-12">
+    <div class="row" id="navigator-container">
+        <div class="col-xs-12 save-all hidden">
+
+            <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="This action need confirmation.">Exit and clear survey</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall"><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Are you sure you want to clear all your responses?</label>
+        </div>
+        <div class="col-xs-12 save-all">
+            <hr>
+        </div>
+        <div class="col-xs-6 save-all text-left">
+            <button type="submit" id="moveprevbtn" value="moveprev" name="moveprev" accesskey="p" class="submit button btn btn-lg  btn-default">Previous</button>
+        </div>
+        <div class="col-xs-6 save-all text-right">
+            <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Next</button>
+        </div>
+    </div>
+</div>
+
+<p style="text-align:center" class="error">This survey is currently not active. You will not be able to save your responses.</p>
+<!-- generated in SurveyRuntimeHelper --><input type="hidden" name="thisstep" value="4" id="thisstep">
+<input type="hidden" name="sid" value="527214" id="sid">
+<input type="hidden" name="start_time" value="1483968093" id="start_time">
+<input type="hidden" name="LEMpostKey" value="1634425767" id="LEMpostKey">
+
+</form>
+        </div> <!-- main-col -->
     </div><!-- main-row -->
 </div><!-- outerframe -->
 
@@ -185,6 +961,7 @@ document.getElementById("checkjavascript").style.display = 'none';
         </div>
     </div>
 </div>
+
 
 <script type='text/javascript'>
 <!--

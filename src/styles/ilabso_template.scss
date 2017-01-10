@@ -12,12 +12,12 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 .radio label::after {
-  background-color: #dd4814;
+  background-color: $brand-primary;
 }
 
 
 .checkbox label::after {
-  color: #dd4814;
+  color: $brand-primary;
 }
 
 .question-text{

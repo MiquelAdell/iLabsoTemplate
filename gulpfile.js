@@ -4,6 +4,7 @@
 
 // Define dependencies
 var autoprefixer   = require('gulp-autoprefixer');
+var browserSync    = require('browser-sync').create();
 var concat         = require('gulp-concat');
 var cleanCSS       = require('gulp-clean-css');
 var del            = require('del');
@@ -11,12 +12,14 @@ var filter         = require('gulp-filter');
 var gulp           = require('gulp');
 var inject         = require('gulp-inject');
 var mainBowerFiles = require('main-bower-files');
+var notify         = require('gulp-notify');
 var sass           = require('gulp-sass');
 var sourcemaps     = require('gulp-sourcemaps');
 var uglify         = require('gulp-uglify');
 var wiredep        = require('wiredep').stream;
 var runSequence    = require('run-sequence');
-var browserSync = require('browser-sync').create();
+
+
 
 
 var sassOptions = {
@@ -27,7 +30,6 @@ var sassOptions = {
 gulp.task('styles', function(){
 	var injectAppFiles = gulp.src('./src/styles/**/*.scss', {read: false});
 	var injectGlobalFiles = gulp.src('./src/global/**/*.scss', {read: false});
-
 
 	function transformFilepath(filepath) {
 		return '@import "' + filepath + '";';
@@ -93,6 +95,12 @@ gulp.task('scripts', function() {
 		.pipe(gulp.dest('./dist/scripts/'));
 });
 
+gulp.task( 'icons', function(){
+	return gulp
+		.src('./bower_components/font-awesome/fonts/**.*')
+		.pipe(gulp.dest('./dist/fonts/'));
+});
+
 // ### Watch
 // `gulp watch` - Use BrowserSync to proxy your dev server and synchronize code
 // changes across devices. Specify the hostname of your dev server at
@@ -115,7 +123,7 @@ gulp.task('clean', function(cb){
 });
 
 gulp.task('build', function (cb) {
-  runSequence('clean', ['vendor-styles', 'vendor-scripts', 'styles', 'scripts'], cb);
+  runSequence('clean', ['vendor-styles', 'vendor-scripts', 'styles', 'scripts', 'icons'], cb);
 });
 
 gulp.task('default', ['clean', 'build']);
