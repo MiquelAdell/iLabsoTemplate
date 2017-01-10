@@ -133,7 +133,23 @@ gulp.task('zip', function (cb) {
 
 gulp.task('do-zip', function(cb){
 	return gulp
-		.src('config.xml, favicon.ico, ilabsotemplate.png, logo_pdf.png, poweredby.png, preview.png, readme.md, views/**, files/**, dist/**')
+		.src(
+			[
+				'**',
+				'!bower_components/',
+				'!bower_components/**',
+				'!node_modules/',
+				'!node_modules/**',
+				'!src/',
+				'!src/**',
+				'!test/',
+				'!test/**',
+				'!.*',
+				'!gulpfile.js',
+				'!package.json',
+				'!bower.json'
+			]
+		)
         .pipe(zip('ilabsotemplate.zip'))
         .pipe(gulp.dest('./'));
 });
