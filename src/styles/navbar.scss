@@ -43,9 +43,12 @@ $navbar-text-color: white;
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: darken($navbar-background-color,10%);
+  .icon-bar{
+    background-color: $navbar-text-color;
+  }
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: $navbar-text-color;
+  background-color: darken($navbar-background-color,10%);
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
