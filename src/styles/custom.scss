@@ -1,0 +1,33 @@
+body .navbar-default  {
+    background-color: white ;
+
+    border-bottom: 2px solid  $brand-primary;
+
+    background-image: url('../images/logo-ajuntament.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 50px;
+
+    .navbar-brand {
+        background-image: url('../images/logo.png');
+        background-repeat: no-repeat;
+        background-position: 150px center;
+        font-family: $headings-font-family;
+        font-size: 1.5rem;
+        padding-left: 420px;
+        height: 70px;
+        line-height: 35px;
+        color: $brand-primary !important;
+        &::before{
+            content: "";
+            background-image: url('../images/logo.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+    }
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
