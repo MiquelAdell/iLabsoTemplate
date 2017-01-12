@@ -1,6 +1,7 @@
 $navbar-background-color: $brand-primary !default;
-$navbar-inverse-color: $brand-inverse !default;
-$navbar-text-color: white;
+$navbar-inverse-background-color: $brand-inverse !default;
+$navbar-text-color: $brand-primary;
+$navbar-inverse-text-color: white;
 
 .navbar-default {
   background-color: $navbar-background-color;
@@ -22,13 +23,13 @@ $navbar-text-color: white;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: $navbar-text-color;
+  color: $navbar-inverse-text-color;
   background-color: darken($navbar-background-color,10%);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: $navbar-text-color;
+  color: $navbar-inverse-text-color;
   background-color: darken($navbar-background-color,10%);
 }
 .navbar-default .navbar-nav > .disabled > a,
@@ -102,8 +103,8 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: darken($navbar-text-color,20%);
 }
 .navbar-inverse {
-  background-color: $navbar-inverse-color;
-  border-color: darken($navbar-inverse-color,10%);
+  background-color: $navbar-inverse-background-color;
+  border-color: darken($navbar-inverse-background-color,10%);
 }
 .navbar-inverse .navbar-brand {
   color: $navbar-text-color;
@@ -122,13 +123,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   color: $navbar-text-color;
-  background-color: darken($navbar-inverse-color,10%);
+  background-color: darken($navbar-inverse-background-color,10%);
 }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: $navbar-text-color;
-  background-color: darken($navbar-inverse-color,10%);
+  background-color: darken($navbar-inverse-background-color,10%);
 }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -137,31 +138,31 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: transparent;
 }
 .navbar-inverse .navbar-toggle {
-  border-color: darken($navbar-inverse-color,10%);
+  border-color: darken($navbar-inverse-background-color,10%);
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: darken($navbar-inverse-color,10%);
+  background-color: darken($navbar-inverse-background-color,10%);
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: $navbar-text-color;
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: darken($navbar-inverse-color,10%);
+  border-color: darken($navbar-inverse-background-color,10%);
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: darken($navbar-inverse-color,10%);
+  background-color: darken($navbar-inverse-background-color,10%);
   color: $navbar-text-color;
 }
 @media (max-width: 767px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: darken($navbar-inverse-color,10%);
+    border-color: darken($navbar-inverse-background-color,10%);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: darken($navbar-inverse-color,10%);
+    background-color: darken($navbar-inverse-background-color,10%);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: $navbar-text-color;
@@ -169,13 +170,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
     color: $navbar-text-color;
-    background-color: darken($navbar-inverse-color,10%);
+    background-color: darken($navbar-inverse-background-color,10%);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: $navbar-text-color;
-    background-color: darken($navbar-inverse-color,10%);
+    background-color: darken($navbar-inverse-background-color,10%);
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
