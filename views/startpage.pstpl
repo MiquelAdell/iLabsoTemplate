@@ -6,6 +6,16 @@
 
 <!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
 {TEMPLATECSS}
+<style>
+[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+</style>
 
 <!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
 {TEMPLATEJS}
@@ -24,8 +34,8 @@
             </button>
             <div class="navbar-brand col-xs-10 col-sm-12" >
                 <div class="logo-ajuntament"></div>
-                <div class="logo-taula"></div>
                 <div class="brand-text">{SURVEYNAME}</div>
+                <div class="logo-taula"></div>
             </div>
         </div>
 

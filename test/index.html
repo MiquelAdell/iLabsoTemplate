@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -38,7 +37,16 @@ LSvar={"bFixNumAuto":1,"bNumRealValue":0,"sLEMradix":"."};
 <!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
 
 <link rel="shortcut icon" href="/templates/ubuntu_orange/favicon.ico" />
-
+<style>
+[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+</style>
 </head>
 <body class="default lang-en questionbyquestion bootstrap-engine  showprogress showqnumcode-X"><script type="text/javascript">
 /*<![CDATA[*/
@@ -57,8 +65,8 @@ setJsVar();
             </button>
             <div class="navbar-brand col-xs-10 col-sm-12" >
       				<div class="logo-ajuntament"></div>
-      				<div class="logo-taula"></div>
       				<div class="brand-text">El sector turístic i les entitats socials a Barcelona</div>
+					<div class="logo-taula"></div>
 			      </div>
         </div>
 
@@ -124,6 +132,812 @@ setJsVar();
 
 
 <form>
+  <input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN">
+
+              <!-- INPUT NAMES -->
+              <input type="hidden" name="fieldnames" value="952362X6X30|952362X6X31|952362X6X32|952362X6X33|952362X6X34|952362X6X34_filecount|952362X6X35|952362X6X36|952362X6X37" id="fieldnames">
+  <button type="submit" id="defaultbtn" value="default" name="move" class="submit noview" style="display:none">default</button><!-- Survey Description survey.pstpl -->
+  <noscript role="alert" id="checkjavascript">&lt;p class='alert alert-danger warningjs'&gt;Avís: l&amp;#039;execució de JavaScript està desactivada en el navegador. És possible que no puguis respondre totes les preguntes de l&amp;#039;enquesta. Verifica els paràmetres del vostre navegador.&lt;/p&gt;</noscript>
+
+
+  <!-- START THE GROUP (in SurveyRunTime ) -->
+
+
+  <div id="group-2" class="row">
+  <!-- Start group -->
+  <div class="col-xs-12 group-container">
+      <h3 class="group-name">Bones pràctiques</h3>
+  </div>
+
+
+
+
+  <!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
+  <!-- Question -->
+      <div id="question30" class="yes-no  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   <p align="justify" style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">La vostra entitat fa alguna actuació o té algun</span></font></font><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">a estratègia/</span></font></font><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">protocol d’interacció amb el turisme que considereu una bona pràctica?</span></font></font></p>
+
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+
+  <div class="list-unstyled answers-list radio-list">
+
+      <div class="col-xs-12 col-sm-6">  <!-- Full width on Phone; otherwise half width -->
+        <div class="btn-group btn-group-justified" data-toggle="buttons" id="952362X6X30-container">
+
+          <!-- Yes -->
+          <label class="btn btn-primary " id="label-answer952362X6X30Y">
+            <input class="radio" type="radio" name="952362X6X30" id="answer952362X6X30Y" value="Y" onclick="checkconditions(this.value, this.name, this.type)">
+            Sí        </label>
+
+          <!-- No -->
+          <label class="btn btn-primary " id="label-answer952362X6X30N">
+              <input class="radio" type="radio" name="952362X6X30" id="answer952362X6X30N" value="N" onclick="checkconditions(this.value, this.name, this.type)">
+              No        </label>
+
+          <!-- No answer -->
+                      <label class="btn btn-primary active" id="label-answer952362X6X30">
+
+                  <input class="radio" type="radio" name="952362X6X30" id="answer952362X6X30" value="" checked="checked" onclick="checkconditions(this.value, this.name, this.type)">
+                      NS/NC
+              </label>
+                </div>
+      </div>
+
+        <input type="hidden" name="java952362X6X30" id="java952362X6X30" value="">
+  </div>
+
+  <script>
+  $(document).on('change', 'div#952362X6X30-container input:radio', function (event) {
+      checkconditions(this.value, this.name, this.type);
+  });
+  </script>
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div style="display: none;" id="question31" class="boilerplate  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   Si us plau, ens podries explicar de forma breu aquesta actuació?
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container" style="display: none;">
+              <div class="col-sm-12 answer">
+                  <!-- boilerplate -->
+
+  <!-- answer -->
+  <input class="boilerplate" type="hidden" name="952362X6X31" id="answer952362X6X31" value="">
+  <!-- end of answer -->
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+                  <!-- views/survey/system/questionhelp -->
+  <div class="text-info questionhelp">
+      <span class="fa fa-question-circle" aria-hidden="true"></span>
+      &nbsp;En cas que en tingueu més d'una, expliqueu-nos la més rellevant. Si ho creieu convenient, podeu fer-nos arribar més actuacions interessants a l'adreça de correu electrònic contacte@ilabso.net</div>
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div style="display: none;" id="question32" class="text-short  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   Nom per identificar l'actuació
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+
+  <div class="question answer-item text-item  inputwidth-12 col-sm-12 form-horizontal short-free-text">
+
+      <div class="form-group">
+
+          <!-- Label -->
+          <label class="control-label col-xs-12 col-sm-2 hide label" for="answer952362X6X32">
+              La teva resposta        </label>
+
+          <!-- Prefix -->
+
+          <!-- Input -->
+          <div class="col-xs-12 col-sm-7">
+              <input class="form-control text  empty" type="text" size="12" name="952362X6X32" id="answer952362X6X32" value="" onkeyup="checkconditions(this.value, this.name, this.type)">
+          </div>
+
+          <!-- Suffix -->
+
+      </div>
+  </div>
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container" style="display: none;">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div style="display: none;" id="question33" class="text-long  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   Breu descripció de l'actuació (en què consisteix, quins resultats s'esperen, si s'ha aconseguit l'èxit esperat...)
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+                  <!-- Long Free Text -->
+
+  <!-- answer -->
+  <p class="question answer-item text-item  inputwidth-12 col-sm-12">
+      <label for="answer952362X6X33" class="hide label">
+          La teva resposta    </label>
+
+  <textarea class="form-control textarea  empty" name="952362X6X33" id="answer952362X6X33" rows="5" cols="12" onkeyup="checkconditions(this.value, this.name, this.type)"></textarea>
+  </p>
+  <!-- end of answer -->
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div style="display: none;" id="question34" class="upload-files  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   Podeu adjuntar informació addicional si ho considereu necessari.
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+                  <div class="text-info questionhelp " role="alert" id="vmsg_34">
+      <div id="vmsg_34_num_answers" class="em_num_answers emtip ">
+
+      <span class="fa fa-exclamation-circle" aria-hidden="true"></span>
+      Carrega com a màxim un arxiu</div>
+  </div>
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+                  <script type="text/javascript">
+          function upload_952362X6X34() {
+              var uploadurl = '/index.php/uploader/index?sid=952362&fieldname=952362X6X34&qid=34';
+              uploadurl += '&preview=1&show_title=1';
+              uploadurl += '&show_comment=1';
+              uploadurl += '&minfiles=' + LEMval('0');
+              uploadurl += '&maxfiles=' + LEMval('1');
+              $('#upload_952362X6X34').attr('href',uploadurl);
+          }
+          var uploadLang = {
+               title: 'Carrega els fitxers',
+               returnTxt: 'Tornar a l\'enquesta',
+               headTitle: 'Títol',
+               headComment: 'Comentari',
+               headFileName: 'Nom del fitxer',
+               deleteFile : 'Borrar',
+               editFile : 'Editar'
+              };
+          var imageurl =  '/images';
+          var uploadurl =  '/index.php/uploader/index';
+      </script>
+
+  <!-- File Upload  -->
+
+  <!--answer -->
+  <div class="upload-button">
+      <a id="upload_952362X6X34" class="btn btn-default upload" href="#" onclick="javascript:upload_952362X6X34();">
+          <span class="fa fa-upload"></span>&nbsp;Puja fitxer    </a>
+  </div>
+  <input type="hidden" id="952362X6X34" name="952362X6X34" value="">
+  <input type="hidden" id="952362X6X34_filecount" name="952362X6X34_filecount" value="0">
+  <div id="952362X6X34_uploadedfiles">
+  </div>
+  <!-- end of answer -->
+  <script type="text/javascript">
+      var surveyid = 952362;
+      $(document).ready(function(){
+      var fieldname = "952362X6X34";
+      var filecount = $("#"+fieldname+"_filecount").val();
+      var json = $("#"+fieldname).val();
+      var show_title = "1";
+      var show_comment = "1";
+      displayUploadedFiles(json, filecount, fieldname, show_title, show_comment);
+      });
+      </script><script type="text/javascript">
+      $(".basic_952362X6X34").change(function() {
+      var i;
+      var jsonstring = "[";
+
+      for (i = 1, filecount = 0; i <= LEMval("1"); i++)
+      {
+      if ($("#952362X6X34_"+i).val() == "")
+      continue;
+
+      filecount++;
+      if (i != 1)
+      jsonstring += ", ";
+
+      if ($("#answer952362X6X34_"+i).val() != "")
+      jsonstring += "{ \"title\":\"\",\"comment\":\"\",\"size\":\"\",\"name\":\"\",\"ext\":\"\"}";
+      }
+      jsonstring += "]";
+
+      $("#952362X6X34").val(jsonstring);
+      $("#952362X6X34_filecount").val(filecount);
+      });
+      </script>
+          <!-- Trigger the modal with a button -->
+          <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
+
+          <!-- Modal -->
+          <div id="file-upload-modal-952362X6X34" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                  <!-- Modal content-->
+                  <div class="modal-content" style="vertical-align: middle;">
+                      <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">×</button>
+                          <h4 class="modal-title">Càrrega d'arxiu</h4>
+                      </div>
+                      <div class="modal-body file-upload-modal-body">
+                          <iframe id="uploader952362X6X34" name="uploader952362X6X34" class="externalSite" src="/index.php/uploader/index?sid=952362&amp;fieldname=952362X6X34&amp;qid=34&amp;preview=1&amp;show_title=1&amp;show_comment=1&amp;minfiles=0&amp;maxfiles=1"></iframe>
+                      </div>
+                      <div class="modal-footer file-upload-modal-footer">
+                          <button type="button" class="btn btn-success" data-dismiss="modal">Desar canvis</button>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div style="display: none;" id="question35" class="text-long  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   Persona i dades de contacte per a més informació (nom, càrrec, correu, telèfon...)
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+                  <!-- Long Free Text -->
+
+  <!-- answer -->
+  <p class="question answer-item text-item  inputwidth-12 col-sm-12">
+      <label for="answer952362X6X35" class="hide label">
+          La teva resposta    </label>
+
+  <textarea class="form-control textarea  empty" name="952362X6X35" id="answer952362X6X35" rows="5" cols="12" onkeyup="checkconditions(this.value, this.name, this.type)"></textarea>
+  </p>
+  <!-- end of answer -->
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div id="question36" class="yes-no  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   <p align="justify" style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">Coneixeu alguna actuació, protocol o experiència d’alguna altra entitat que considereu una bona pràctica? Aquesta experiència pot ser tant a nivell de Barcelona com de fora.</span></font></font></p>
+
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+
+  <div class="list-unstyled answers-list radio-list">
+
+      <div class="col-xs-12 col-sm-6">  <!-- Full width on Phone; otherwise half width -->
+        <div class="btn-group btn-group-justified" data-toggle="buttons" id="952362X6X36-container">
+
+          <!-- Yes -->
+          <label class="btn btn-primary " id="label-answer952362X6X36Y">
+            <input class="radio" type="radio" name="952362X6X36" id="answer952362X6X36Y" value="Y" onclick="checkconditions(this.value, this.name, this.type)">
+            Sí        </label>
+
+          <!-- No -->
+          <label class="btn btn-primary " id="label-answer952362X6X36N">
+              <input class="radio" type="radio" name="952362X6X36" id="answer952362X6X36N" value="N" onclick="checkconditions(this.value, this.name, this.type)">
+              No        </label>
+
+          <!-- No answer -->
+                      <label class="btn btn-primary active" id="label-answer952362X6X36">
+
+                  <input class="radio" type="radio" name="952362X6X36" id="answer952362X6X36" value="" checked="checked" onclick="checkconditions(this.value, this.name, this.type)">
+                      NS/NC
+              </label>
+                </div>
+      </div>
+
+        <input type="hidden" name="java952362X6X36" id="java952362X6X36" value="">
+  </div>
+
+  <script>
+  $(document).on('change', 'div#952362X6X36-container input:radio', function (event) {
+      checkconditions(this.value, this.name, this.type);
+  });
+  </script>
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <!-- Question -->
+      <div style="display: none;" id="question37" class="text-long  col-xs-12 question-container">
+
+          <!-- Question title -->
+          <div class="row question-wrapper question-title-container">
+              <div class="col-sm-12 questiontext">
+                  <div class="qnumcode question-text">
+                   Explica'ns de forma breu aquesta actuació (nom, entitat que la realitza, descripció, àmbit d'actuació, persona de contacte...)
+                  </div>
+
+              </div>
+          </div>
+
+          <!-- Question valid message -->
+          <div class="row question-wrapper">
+              <div class="col-sm-12 questionvalidcontainer">
+
+
+
+              </div>
+          </div>
+
+
+          <!-- Answer -->
+          <div class="row question-wrapper answer-container">
+              <div class="col-sm-12 answer">
+                  <!-- Long Free Text -->
+
+  <!-- answer -->
+  <p class="question answer-item text-item  inputwidth-12 col-sm-12">
+      <label for="answer952362X6X37" class="hide label">
+          La teva resposta    </label>
+
+  <textarea class="form-control textarea  empty" name="952362X6X37" id="answer952362X6X37" rows="5" cols="12" onkeyup="checkconditions(this.value, this.name, this.type)"></textarea>
+  </p>
+  <!-- end of answer -->
+
+              </div>
+          </div>
+
+          <!-- Question help -->
+          <div class="row question-wrapper question-help-container">
+              <div class="col-sm-12 question-help">
+
+              </div>
+          </div>
+      </div>
+  <input type="hidden" name="lastgroup" value="952362X6" id="lastgroup">
+
+
+  <!-- END THE GROUP -->
+  <!-- endgroup -->
+
+
+  </div>
+
+  <script type="text/javascript">
+  <!--
+  var LEMmode='group';
+  var LEMgseq=2;
+  function ExprMgr_process_relevance_and_tailoring(evt_type,sgqa,type){
+  if (typeof LEM_initialized == 'undefined') {
+  LEM_initialized=true;
+  LEMsetTabIndexes();
+  }
+  if (evt_type == 'onchange' && (typeof last_sgqa !== 'undefined' && sgqa==last_sgqa) && (typeof last_evt_type !== 'undefined' && last_evt_type == 'TAB' && type != 'checkbox')) {
+    last_evt_type='onchange';
+    last_sgqa=sgqa;
+    return;
+  }
+  last_evt_type = evt_type;
+  last_sgqa=sgqa;
+    relChange30=false;
+    relChange31=false;
+    relChange32=false;
+    relChange33=false;
+    relChange34=false;
+    relChange35=false;
+    relChange36=false;
+    relChange37=false;
+    relChangeG2=false;
+    LEMrel31(sgqa);
+    LEMrel32(sgqa);
+    LEMrel33(sgqa);
+    LEMrel34(sgqa);
+    LEMrel35(sgqa);
+    LEMrel37(sgqa);
+
+  }
+  function LEMrel31(sgqa){
+    var UsesVars = ' java952362X6X30 ';
+    if(relChange30){
+      ;
+    }
+    else  if(relChangeG2){
+      ;
+    }
+    else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+    return;
+   }
+
+  if ((((LEMval('952362X6X30.NAOK')  == "Y"))))
+  {
+    $('#question31').show();
+    relChange31=true;
+    $('#relevance31').val('1');
+  }
+  else {
+    $('#question31').hide();
+    if ($('#relevance31').val()=='1') { relChange31=true; }
+    $('#relevance31').val('0');
+  }
+  }
+
+  function LEMrel32(sgqa){
+    var UsesVars = ' java952362X6X30 ';
+    if(relChange30){
+      ;
+    }
+    else  if(relChangeG2){
+      ;
+    }
+    else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+    return;
+   }
+
+  if ((((LEMval('952362X6X30.NAOK')  == "Y"))))
+  {
+    $('#question32').show();
+    if($('#question32 div[id^="gmap_canvas"]').length > 0)
+    {
+        resetMap(32);
+    }
+    relChange32=true;
+    $('#relevance32').val('1');
+  }
+  else {
+    $('#question32').hide();
+    if ($('#relevance32').val()=='1') { relChange32=true; }
+    $('#relevance32').val('0');
+  }
+  }
+
+  function LEMrel33(sgqa){
+    var UsesVars = ' java952362X6X30 ';
+    if(relChange30){
+      ;
+    }
+    else  if(relChangeG2){
+      ;
+    }
+    else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+    return;
+   }
+
+  if ((((LEMval('952362X6X30.NAOK')  == "Y"))))
+  {
+    $('#question33').show();
+    relChange33=true;
+    $('#relevance33').val('1');
+  }
+  else {
+    $('#question33').hide();
+    if ($('#relevance33').val()=='1') { relChange33=true; }
+    $('#relevance33').val('0');
+  }
+  }
+
+  function LEMrel34(sgqa){
+    var UsesVars = ' java952362X6X30 952362X6X34_filecount ';
+    if(relChange30){
+      ;
+    }
+    else  if(relChangeG2){
+      ;
+    }
+    else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+    return;
+   }
+
+  if ((((LEMval('952362X6X30.NAOK')  == "Y"))))
+  {
+    LEMval34(sgqa);
+    $('#question34').show();
+    relChange34=true;
+    $('#relevance34').val('1');
+  }
+  else {
+    $('#question34').hide();
+    if ($('#relevance34').val()=='1') { relChange34=true; }
+    $('#relevance34').val('0');
+  }
+  }
+
+  function LEMrel35(sgqa){
+    var UsesVars = ' java952362X6X30 ';
+    if(relChange30){
+      ;
+    }
+    else  if(relChangeG2){
+      ;
+    }
+    else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+    return;
+   }
+
+  if ((((LEMval('952362X6X30.NAOK')  == "Y"))))
+  {
+    $('#question35').show();
+    relChange35=true;
+    $('#relevance35').val('1');
+  }
+  else {
+    $('#question35').hide();
+    if ($('#relevance35').val()=='1') { relChange35=true; }
+    $('#relevance35').val('0');
+  }
+  }
+
+  function LEMrel37(sgqa){
+    var UsesVars = ' java952362X6X36 ';
+    if(relChange36){
+      ;
+    }
+    else  if(relChangeG2){
+      ;
+    }
+    else  if (typeof sgqa !== 'undefined' && !LEMregexMatch('/ java' + sgqa + ' /', UsesVars)) {
+    return;
+   }
+
+  if ((((LEMval('952362X6X36.NAOK')  == "Y"))))
+  {
+    $('#question37').show();
+    relChange37=true;
+    $('#relevance37').val('1');
+  }
+  else {
+    $('#question37').hide();
+    if ($('#relevance37').val()=='1') { relChange37=true; }
+    $('#relevance37').val('0');
+  }
+  }
+  function LEMval34(sgqa){
+    isValidSum34=true;
+    isValidOther34=true;
+    isValidOtherComment34=true;
+
+    if(LEMif(LEManyNA('952362X6X34_filecount'),'',(((LEMval('952362X6X34_filecount')  <= (1)))))){
+      $('#vmsg_34_num_answers').removeClass('error').addClass('good').trigger('classChangeGood');
+    }
+    else {
+      $('#vmsg_34_num_answers').removeClass('good').addClass('error').trigger('classChangeError');
+      isValidOther34=false;
+    }
+
+    if(isValidSum34){
+      $('#totalvalue_34').removeClass('error').addClass('good').trigger('classChangeGood');
+    }
+    else {
+      $('#totalvalue_34').removeClass('good').addClass('error').trigger('classChangeError');
+    }
+  }
+  var LEMalias2varName = {
+  'c01':'java952362X6X30',
+  '952362X6X30':'java952362X6X30',
+  'c04_filecount':'952362X6X34_filecount',
+  '952362X6X34_filecount':'952362X6X34_filecount',
+  'c06':'java952362X6X36',
+  '952362X6X36':'java952362X6X36'};
+  var LEMvarNameAttr = {
+  'java952362X6X30':{ 'jsName':'java952362X6X30','jsName_on':'java952362X6X30','sgqa':'952362X6X30','qid':30,'gid':6,'type':'Y','default':'','rowdivid':'','onlynum':'','gseq':2,'answers':{ 'Y':'Sí','N':'No'}},
+  '952362X6X34_filecount':{ 'jsName':'952362X6X34_filecount','jsName_on':'952362X6X34_filecount','sgqa':'952362X6X34_filecount','qid':34,'gid':6,'type':'|','default':'','rowdivid':'','onlynum':'','gseq':2},
+  'java952362X6X36':{ 'jsName':'java952362X6X36','jsName_on':'java952362X6X36','sgqa':'952362X6X36','qid':36,'gid':6,'type':'Y','default':'','rowdivid':'','onlynum':'','gseq':2,'answers':{ 'Y':'Sí','N':'No'}}};
+  //-->
+  </script>
+  <input type="hidden" id="relevance30" name="relevance30" value="1">
+  <input type="hidden" id="relevance31" name="relevance31" value="0">
+  <input type="hidden" id="relevance32" name="relevance32" value="0">
+  <input type="hidden" id="relevance33" name="relevance33" value="0">
+  <input type="hidden" id="relevance34" name="relevance34" value="0">
+  <input type="hidden" id="relevance35" name="relevance35" value="0">
+  <input type="hidden" id="relevance36" name="relevance36" value="1">
+  <input type="hidden" id="relevance37" name="relevance37" value="0">
+  <input type="hidden" id="relevanceG2" name="relevanceG2" value="1">
+  <input type="hidden" id="aQuestionsWithDependencies" data-qids="[&quot;30&quot;,&quot;36&quot;]">
+
+  <!-- PRESENT THE NAVIGATOR -->
+  <!-- Navigator hidden-xs-->
+  <div class="col-xs-12">
+      <div class="row" id="navigator-container">
+          <div class="col-xs-12 save-all hidden">
+              <button type="submit" id="saveallbtn" value="saveall" name="saveall" class="saveall btn btn-default col-xs-12 col-sm-4 submit button hidden">Continuar més tard</button>
+              <button type="submit" id="clearall" value="clearall" name="clearall" class="clearall button  btn btn-default btn-lg  col-xs-4 hidden" data-confirmedby="confirm-clearall" title="Aquesta acció necessita la teva confirmació">Sortir i esborrar les respostes</button><input id="confirm-clearall" value="confirm" class="hide jshide  btn btn-default btn-lg  col-xs-4" type="checkbox" name="confirm-clearall"><label class="hide jshide  btn btn-default btn-lg  col-xs-4" for="confirm-clearall">Estàs segur que vols suprimir totes les respostes?</label>
+          </div>
+          <div class="col-xs-12 save-all">
+              <hr>
+          </div>
+          <div class="col-xs-6 save-all text-left">
+
+          </div>
+          <div class="col-xs-6 save-all text-right">
+              <button type="submit" id="movenextbtn" value="movenext" name="movenext" accesskey="n" class="submit button btn btn-lg  btn-primary">Següent</button>
+          </div>
+      </div>
+  </div>
+
+  <p style="text-align:center" class="error">Actualment aquesta enquesta no està activa. No podràs guardar les respostes.</p>
+  <!-- generated in SurveyRuntimeHelper --><input type="hidden" name="thisstep" value="3" id="thisstep">
+  <input type="hidden" name="sid" value="952362" id="sid">
+  <input type="hidden" name="start_time" value="1484219224" id="start_time">
+  <input type="hidden" name="LEMpostKey" value="1409496977" id="LEMpostKey">
+
 	<input type="hidden" value="45f8ea5a7b9dfcc4d25273aa9d9a54ebe6e19e40" name="YII_CSRF_TOKEN">
 
 	            <!-- INPUT NAMES -->
