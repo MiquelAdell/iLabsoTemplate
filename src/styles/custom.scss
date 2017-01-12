@@ -52,12 +52,78 @@ body .navbar-default  {
     background: transparent;
 }
 
+body .navbar-default .navbar-brand {
+    padding: 0;
+}
+
 nav#topsurveymenubar,
 body .navbar-header {
     padding-left: 0;
     padding-right: 0;
 }
+html body .navbar.navbar-default.navbar-fixed-top {
+    z-index: 3;
+}
+
+.navbar-default .navbar-toggle {
+    z-index: 2;
+}
+
+.navbar-fixed-top .navbar-collapse {
+    @media (min-width: 768px) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        li {
+            float: right;
+        }
+    }
+    @media (max-width: 767px) {
+        height: 2em;
+        position: absolute;
+        z-index: 2;
+        top: 164px;
+        height: 0;
+        background: white;
+        &.in {
+            height: auto;
+        }
+    }
+    @media (max-width: 647px) {
+        top: 238px;
+    }
+
+
+}
 
 body .navbar-default .navbar-brand {
-    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    @media (max-width : 768px) {
+        .logo-ajuntament {
+             order: 1;
+             margin-top: 0;
+        }
+        .brand-text {
+             order: 3;
+             line-height: 1em;
+             margin-top: 0;
+        }
+        .logo-taula {
+             order: 2;
+             margin-top: 0;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .logo-ajuntament {
+            width: 33%;
+            background-size: contain;
+        }
+        .logo-taula {
+            width: 33%;
+            float: left;
+            background-size: contain;
+        }
+    }
 }
