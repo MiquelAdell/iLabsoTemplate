@@ -23,7 +23,7 @@ body .navbar-default  {
     background-position: left center;
     background-size: auto 50px;
     float: left;
-    margin: 0.5em 1em 0.5em 0;
+    margin: 0.5em 0.5em 0.5em 1em;
 
 }
 
@@ -34,7 +34,7 @@ body .navbar-default  {
     background-repeat: no-repeat;
     background-position: left center;
     float: left;
-    margin: 0.5em;
+    margin: 0.5em 1em 0.5em 0.5em;
 }
 
 .brand-text {
@@ -99,9 +99,9 @@ html body .navbar.navbar-default.navbar-fixed-top {
 body .navbar-default .navbar-brand {
     display: flex;
     flex-flow: row wrap;
-    @media (max-width : 768px) {
+    @media (max-width : 1200px) {
         .logo-ajuntament {
-             order: 1;
+             order: 2;
              margin-top: 0;
         }
         .brand-text {
@@ -110,7 +110,7 @@ body .navbar-default .navbar-brand {
              margin-top: 0;
         }
         .logo-taula {
-             order: 2;
+             order: 1;
              margin-top: 0;
         }
     }

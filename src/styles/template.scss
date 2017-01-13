@@ -5808,3 +5808,10 @@ button.close {
 .btn.btn-lg, .btn-group-lg>.btn, .btn-group-lg>.custom-file-control::before, .btn-lg.custom-file-control::before, .btn-group-lg .btn, .btn-group-lg .custom-file-control::before {
     font-size: 1rem;
 }
+
+
+form > .row {
+    @media (max-width: 575px) {
+        padding: 10px;
+    }
+}
