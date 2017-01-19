@@ -1,0 +1,140 @@
+body .navbar-default  {
+    background-color: white ;
+
+    border-bottom: 2px solid  $brand-primary;
+
+    .navbar-brand {
+        font-family: $headings-font-family;
+        font-size: 1.5rem;
+        height: auto;
+        line-height: 35px;
+        color: $brand-primary !important;
+    }
+}
+
+.logo-ajuntament {
+    width: 25%;
+    height: 57px;
+    background-image: url('../images/logo-ajuntament.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 50px;
+    float: left;
+
+}
+
+.logo-taula {
+    height: 57px;
+    width: 25%;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    float: left;
+}
+
+.brand-text {
+    float: left;
+    line-height: 57px;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}
+
+body .navbar-default .navbar-brand {
+    padding: 0;
+}
+
+nav#topsurveymenubar,
+body .navbar-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+html body .navbar.navbar-default.navbar-fixed-top {
+    z-index: 3;
+}
+
+.navbar-default .navbar-toggle {
+    z-index: 2;
+}
+
+
+body .navbar-default .navbar-brand {
+    position: relative;
+    @media (max-width : 1200px) {
+        .logo-taula {
+            background-image: url('../images/logo-min.png');
+            width: 50px;
+            position: absolute;
+            left: 5px;
+            background-position: 0 center;
+            background-size: contain;
+        }
+
+        .brand-text {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 55px;
+            font-size: 16px;
+        }
+        .logo-ajuntament {
+            background-image: url('../images/logo-ajuntament-min.png');
+            width: 50px;
+            position: absolute;
+            right: 0;
+            background-size: contain;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .brand-text {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 55px;
+            font-size: 14px;
+        }
+    }
+}
+
+.navbar-fixed-top {
+    margin-bottom: 50px;
+}
+#navbar {
+    display: block !important;
+    float: left;
+    height: 50px !important;
+    background: lighten($brand-primary,60%);
+
+    clear: both;
+    position: fixed;
+    top: 74px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid lighten($brand-primary,20%);
+    padding: 0;
+    border-radius: 0;
+}
+
+.navbar-nav>li {
+    float: left;
+    a {
+        padding: 15px !important;
+        @media (max-width: 480px) {
+            font-size: 12px;
+            line-height: 15px;
+            padding: 15px 10px !important;
+        }
+    }
+}
+
+.navbar-right {
+    float: right !important;
+    margin: 0 !important;
+}

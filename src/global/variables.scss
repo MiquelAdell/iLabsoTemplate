@@ -1,12 +1,13 @@
 $font-size-root: 16px ;
 
-@import url('https://fonts.googleapis.com/css?family=Lora|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
 
 $font-family-sans-serif: "Ubuntu", sans-serif;
-$font-family-serif:      'Lora', serif;
+$font-family-serif:      'Open Sans', serif;
 
 $font-family-base:       $font-family-sans-serif;
 $headings-font-family:   $font-family-serif;
+
 
 
 $brand-primary: hsla(187, 100%, 42%, 1);
@@ -15,3 +16,6 @@ $brand-inverse: invert($brand-primary);
 // $brand-info:                #5bc0de !default;
 // $brand-warning:             #f0ad4e !default;
 // $brand-danger:              #d9534f !default;
+
+//3r sector
+$brand-primary: hsla(227, 70%, 37%, 1);
