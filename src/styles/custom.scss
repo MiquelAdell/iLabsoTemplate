@@ -9,42 +9,37 @@ body .navbar-default  {
         height: auto;
         line-height: 35px;
         color: $brand-primary !important;
-        @media (max-width: 769px) {
-            font-size: 1rem;
-        }
     }
 }
 
 .logo-ajuntament {
-    width: 150px;
+    width: 25%;
     height: 57px;
     background-image: url('../images/logo-ajuntament.png');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: right center;
     background-size: auto 50px;
     float: left;
-    margin: 0.5em 0.5em 0.5em 1em;
 
 }
 
 .logo-taula {
     height: 57px;
-    width: 225px;
+    width: 25%;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: 10px center;
     float: left;
-    margin: 0.5em 1em 0.5em 0.5em;
 }
 
 .brand-text {
     float: left;
-    margin: 0.5em;
     line-height: 57px;
-    max-width: 100%;
+    width: 50%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
 .parallax-window {
@@ -69,61 +64,77 @@ html body .navbar.navbar-default.navbar-fixed-top {
     z-index: 2;
 }
 
-.navbar-fixed-top .navbar-collapse {
-    @media (min-width: 768px) {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        li {
-            float: right;
-        }
-    }
-    @media (max-width: 767px) {
-        height: 2em;
-        position: absolute;
-        z-index: 2;
-        top: 164px;
-        height: 0;
-        background: white;
-        &.in {
-            height: auto;
-        }
-    }
-    @media (max-width: 647px) {
-        top: 238px;
-    }
-
-
-}
 
 body .navbar-default .navbar-brand {
-    display: flex;
-    flex-flow: row wrap;
+    position: relative;
     @media (max-width : 1200px) {
-        .logo-ajuntament {
-             order: 2;
-             margin-top: 0;
-        }
-        .brand-text {
-             order: 3;
-             line-height: 1em;
-             margin-top: 0;
-        }
         .logo-taula {
-             order: 1;
-             margin-top: 0;
+            background-image: url('../images/logo-min.png');
+            width: 50px;
+            position: absolute;
+            left: 5px;
+            background-position: 0 center;
+            background-size: contain;
+        }
+
+        .brand-text {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 55px;
+            font-size: 16px;
+        }
+        .logo-ajuntament {
+            background-image: url('../images/logo-ajuntament-min.png');
+            width: 50px;
+            position: absolute;
+            right: 0;
+            background-size: contain;
         }
     }
 
     @media (max-width: 480px) {
-        .logo-ajuntament {
-            width: 33%;
-            background-size: contain;
-        }
-        .logo-taula {
-            width: 33%;
-            float: left;
-            background-size: contain;
+        .brand-text {
+            font-size: 20px;
+            width: 100%;
+            padding: 0 55px;
+            font-size: 14px;
         }
     }
+}
+
+.navbar-fixed-top {
+    margin-bottom: 50px;
+}
+#navbar {
+    display: block !important;
+    float: left;
+    height: 50px !important;
+    background: lighten($brand-primary,60%);
+
+    clear: both;
+    position: fixed;
+    top: 74px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid lighten($brand-primary,20%);
+    padding: 0;
+    border-radius: 0;
+}
+
+.navbar-nav>li {
+    float: left;
+    a {
+        padding: 15px !important;
+        @media (max-width: 480px) {
+            font-size: 12px;
+            line-height: 15px;
+            padding: 15px 10px !important;
+        }
+    }
+}
+
+.navbar-right {
+    float: right !important;
+    margin: 0 !important;
 }
