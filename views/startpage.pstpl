@@ -6,6 +6,16 @@
 
 <!-- The following line includes jquery-ui.css or jquery-ui-custom.css from template dir, template.css and needed specific css file for survey -->
 {TEMPLATECSS}
+<style>
+[data-toggle="buttons"] > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="checkbox"],
+[data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+</style>
 
 <!-- The following line includes jquery.js, jquery-ui.js, survey_runtime.js , template.js and needed specific js file for survey -->
 {TEMPLATEJS}
@@ -15,19 +25,15 @@
 <body class="default lang-{SURVEYLANGUAGE} {SURVEYFORMAT}">
 
     <nav class="navbar navbar-default navbar-fixed-top" id="topsurveymenubar">
-        <div class="navbar-header col-xs-12 col-sm-6 col-lg-8">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <span class="navbar-brand col-xs-10 col-sm-12" >{SURVEYNAME}</span>
+        <div class="navbar-header col-xs-12">
+            <div class="navbar-brand col-xs-12" >
+            <div class="logo-taula"></div>
+            <div class="brand-text">{SURVEYNAME}</div>
+            <div class="logo-ajuntament"></div>
+            </div>
         </div>
 
-        <div id="navbar" class="navbar-collapse collapse col-xs-12">
-            <ul class="nav navbar-nav">
-            </ul>
+        <div id="navbar" class="navbar col-xs-12">
             <ul class="nav navbar-nav navbar-right">
                 {SAVE_LINKS}
                 {CLEARALL_LINKS}
@@ -35,6 +41,8 @@
             </ul>
         </div><!--/.nav-collapse -->
     </nav>
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{TEMPLATEURL}/dist/images/background-1900.jpg"></div>
 
 
     <!-- Top container -->

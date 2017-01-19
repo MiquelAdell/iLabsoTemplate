@@ -10,6 +10,7 @@ var cleanCSS       = require('gulp-clean-css');
 var del            = require('del');
 var filter         = require('gulp-filter');
 var gulp           = require('gulp');
+var imagemin       = require('gulp-imagemin');
 var inject         = require('gulp-inject');
 var mainBowerFiles = require('main-bower-files');
 var notify         = require('gulp-notify');
@@ -102,6 +103,20 @@ gulp.task( 'icons', function(){
 		.pipe(gulp.dest('./dist/fonts/'));
 });
 
+// ### Images
+// `gulp images` - Run lossless compression on all the images.
+gulp.task('images', function() {
+  return gulp.src('./src/images/**')
+    .pipe(imagemin({
+      progressive: true,
+      interlaced: true,
+      svgoPlugins: [{removeUnknownsAndDefaults: false}, {cleanupIDs: false}]
+    }))
+    .pipe(gulp.dest('./dist/images'))
+    .pipe(browserSync.stream());
+});
+
+
 // ### Watch
 // `gulp watch` - Use BrowserSync to proxy your dev server and synchronize code
 // changes across devices. Specify the hostname of your dev server at
@@ -120,11 +135,11 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','ilabsotemplate.zip'], cb);
+	return del(['dist','turisme-tercer-sector.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
-  runSequence('clean', ['vendor-styles', 'vendor-scripts', 'styles', 'scripts', 'icons'], cb);
+  runSequence('clean', ['vendor-styles', 'vendor-scripts', 'styles', 'scripts', 'icons', 'images'], cb);
 });
 
 gulp.task('zip', function (cb) {
@@ -147,10 +162,11 @@ gulp.task('do-zip', function(cb){
 				'!.*',
 				'!gulpfile.js',
 				'!package.json',
-				'!bower.json'
+				'!bower.json',
+				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('ilabsotemplate.zip'))
+        .pipe(zip('turisme-tercer-sector.zip'))
         .pipe(gulp.dest('./'));
 });
 
