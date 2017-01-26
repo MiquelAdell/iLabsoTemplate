@@ -1,7 +1,7 @@
 $navbar-background-color: $brand-primary !default;
 $navbar-inverse-background-color: $brand-inverse !default;
-$navbar-text-color: $brand-primary;
-$navbar-inverse-text-color: white;
+$navbar-text-color: white;
+$navbar-inverse-text-color: $navbar-text-color;
 
 .navbar-default {
   background-color: $navbar-background-color;
