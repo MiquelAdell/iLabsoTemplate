@@ -135,7 +135,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','turisme-tercer-sector.zip'], cb);
+	return del(['dist','joventut.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
@@ -166,7 +166,7 @@ gulp.task('do-zip', function(cb){
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('turisme-tercer-sector.zip'))
+        .pipe(zip('joventut.zip'))
         .pipe(gulp.dest('./'));
 });
 

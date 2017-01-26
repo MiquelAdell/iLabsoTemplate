@@ -12,39 +12,118 @@ body .navbar-default  {
     }
 }
 
-.logo-ajuntament {
-    width: 25%;
-    height: 57px;
-    background-image: url('../images/logo-ajuntament.png');
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto 50px;
-    float: left;
+.logo-holder {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    &.scrolled {
+        width: 100px;
+        height: 72px;
+        padding: 10px;
+        border: 0px;
+    }
+    @media (max-width : 676px) {
+        width: 100px;
+        height: 72px;
+        padding: 10px;
+        border: 0px;
+    }
 
+    transition: width 0.5s, height 0.5s, padding 0.5s;
+
+    z-index: 10;
+    background-color: white;
+
+    z-index: 999999;
+    position: fixed;
+    margin: 0px;
+
+
+    .logo {
+        background-image: url('../images/logo.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        height: 100%;
+        width: 100%;
+    }
 }
+body .nav {
+    width: 258px;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    font-weight: bold;
+    &>li {
+        font-size: 80%;
+        &>a {
+            padding: 6px 10px ;
+        }
+    }
+    @media (max-width : 980px) {
+        margin-top: 54px;
+        width: 100%;
+        border-bottom: 1px solid $brand-primary;
+        background: white;
+        &>li {
+            width: auto;
+            text-align: center;
+            float: right;
+            &>a {
+                padding: 6px 10px ;
+            }
+        }
+    }
+    @media (max-width : 380px) {
+        &>li {
+            font-size: 80%;
+            &>a {
+                padding: 6px 5px ;
+            }
+        }
+    }
 
-.logo-taula {
-    height: 57px;
-    width: 25%;
-    background-image: url('../images/logo.png');
-    background-repeat: no-repeat;
-    background-position: 10px center;
-    float: left;
 }
 
 .brand-text {
     float: left;
     line-height: 57px;
-    width: 50%;
+    width: auto;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: center;
+    margin-left: 230px ;
+    font-size: 2em;
+    color: $brand-primary;
+    font-weight: bold;
+
+    @media (max-width : 1290px) {
+        font-size: 1.5em;
+    }
+    @media (max-width : 1110px) {
+        font-size: 1.25em;
+    }
+    @media (max-width : 980px) {
+    }
+    @media (max-width : 676px) {
+        font-size: 1em;
+        margin-left: 100px;
+        margin-right: 0;
+        width: auto;
+    }
+    @media (max-width : 380px) {
+        font-size: 80%;
+    }
+
 }
 
-.parallax-window {
-    min-height: 600px;
-    background: transparent;
+.outerframe {
+    padding-top: 200px;
+    @media (max-width : 676px) {
+        padding-top: 10px;
+    }
 }
 
 body .navbar-default .navbar-brand {
@@ -68,8 +147,8 @@ html body .navbar.navbar-default.navbar-fixed-top {
 body .navbar-default .navbar-brand {
     position: relative;
     @media (max-width : 1200px) {
-        .logo-taula {
-            background-image: url('../images/logo-min.png');
+        .logo {
+            background-image: url('../images/logo.png');
             width: 50px;
             position: absolute;
             left: 5px;
@@ -82,13 +161,6 @@ body .navbar-default .navbar-brand {
             width: 100%;
             padding: 0 55px;
             font-size: 16px;
-        }
-        .logo-ajuntament {
-            background-image: url('../images/logo-ajuntament-min.png');
-            width: 50px;
-            position: absolute;
-            right: 0;
-            background-size: contain;
         }
     }
 
@@ -120,21 +192,4 @@ body .navbar-default .navbar-brand {
     border-bottom: 1px solid lighten($brand-primary,20%);
     padding: 0;
     border-radius: 0;
-}
-
-.navbar-nav>li {
-    float: left;
-    a {
-        padding: 15px !important;
-        @media (max-width: 480px) {
-            font-size: 12px;
-            line-height: 15px;
-            padding: 15px 10px !important;
-        }
-    }
-}
-
-.navbar-right {
-    float: right !important;
-    margin: 0 !important;
 }
