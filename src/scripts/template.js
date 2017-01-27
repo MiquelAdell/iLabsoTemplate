@@ -76,11 +76,6 @@ $(document).ready(function()
 
     $('.if-no-js').hide();
 
-    if($(window).width() < 768 )
-    {
-        // nothing
-    }
-
     //var outerframeDistanceFromTop = 50;
     //topsurveymenubar
     var topsurveymenubarHeight = $('#topsurveymenubar').innerHeight();
