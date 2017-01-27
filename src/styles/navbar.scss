@@ -61,7 +61,7 @@ $navbar-inverse-text-color: white;
   background-color: darken($navbar-background-color,10%);
   color: $navbar-text-color;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: $navbar-text-color;
   }
@@ -157,7 +157,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   background-color: darken($navbar-inverse-background-color,10%);
   color: $navbar-text-color;
 }
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
     border-color: darken($navbar-inverse-background-color,10%);
   }
@@ -203,4 +203,13 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: darken($navbar-text-color,20%);
+}
+
+
+@media (max-width: 1199px) {
+  .nav.navbar-nav.navbar-right {
+      background-color: #c66;
+      margin-top: 108px;
+      margin-left: 15px;
+  }
 }
