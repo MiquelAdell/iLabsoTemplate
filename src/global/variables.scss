@@ -1,17 +1,15 @@
 $font-size-root: 16px ;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Arimo');
 
-$font-family-sans-serif: "Arial", sans-serif;
-$font-family-serif:      'Open Sans', serif;
+$font-family-sans-serif: "Lucida Sans","Lucida Grande","Lucida Sans Unicode", "Arimo","sans-serif";
+$font-family-serif:      serif;
 
 $font-family-base:       $font-family-sans-serif;
 $headings-font-family:   $font-family-sans-serif;
 
-
-
-$brand-primary: #993333;
-$brand-inverse: invert($brand-primary);
+$brand-primary: hsla(172, 100%, 26%, 1);
+$brand-inverse: hsla(172, 20%, 16%, 1);
 // $brand-success:             #5cb85c !default;
 // $brand-info:                #5bc0de !default;
 // $brand-warning:             #f0ad4e !default;

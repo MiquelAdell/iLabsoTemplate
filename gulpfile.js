@@ -167,7 +167,7 @@ gulp.task('do-zip', function(cb){
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('bages.zip'))
+        .pipe(zip('template.zip'))
         .pipe(gulp.dest('./'));
 });
 
