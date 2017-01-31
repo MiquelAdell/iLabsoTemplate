@@ -36,7 +36,7 @@ div[id^="group-"]>div {
 }
 
 #surveydescription, #surveynametitle, #welcome-container h1 {
-    color: #2c3e50;
+    color: $brand-primary;
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ div[id^="group-"]>div {
 }
 
 #surveydescription, .group-name {
-    color: #2c3e50;
+    color: $brand-primary;
 }
 
 #main-row, #welcome-container {
@@ -2328,17 +2328,13 @@ output {
   background-image: none;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: desaturate($brand-primary,50%);
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px desaturate($brand-primary,50%);
 }
 .form-control::-moz-placeholder {
   color: desaturate($brand-primary,50%);
@@ -5810,4 +5806,13 @@ form > .row {
     @media (max-width: 575px) {
         padding: 10px;
     }
+}
+
+body .navbar-default .navbar-brand {
+    font-family: $headings-font-family;
+}
+
+
+form > .row {
+	margin-top: 25px;
 }
