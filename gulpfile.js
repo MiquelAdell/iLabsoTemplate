@@ -5,6 +5,7 @@
 // Define dependencies
 var autoprefixer   = require('gulp-autoprefixer');
 var browserSync    = require('browser-sync').create();
+var cheerio        = require('gulp-cheerio');
 var concat         = require('gulp-concat');
 var cleanCSS       = require('gulp-clean-css');
 var del            = require('del');
@@ -147,6 +148,7 @@ gulp.task('zip', function (cb) {
 });
 
 gulp.task('do-zip', function(cb){
+
 	return gulp
 		.src(
 			[
@@ -167,8 +169,17 @@ gulp.task('do-zip', function(cb){
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('template.zip'))
-        .pipe(gulp.dest('./'));
+		.pipe(
+			// zip(
+			// 	gulp.src(['config.xml'])
+			// 		.pipe(cheerio(function ($, file) {
+			// 			console.log($('config metadatas name').text());
+			// 			return $('config metadatas name').text();
+			// 		}))+
+			// '.zip')
+			zip('barometre.zip')
+		)
+		.pipe(gulp.dest('./'));
 });
 
 gulp.task('default', ['build']);

@@ -5816,3 +5816,29 @@ body .navbar-default .navbar-brand {
 form > .row {
 	margin-top: 25px;
 }
+
+.no-more-tables table {
+    display: table;
+}
+
+.units-suffix-prev {
+    width: 90%;
+    float: left;
+}
+
+.units-suffix {
+    width: 10%;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+    vertical-align: middle;
+}
+
+.tokenmessage-wrapper {
+    .jumbotron {
+        margin-top: 50px;
+    }
+    input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+        width: auto;
+    }
+}
