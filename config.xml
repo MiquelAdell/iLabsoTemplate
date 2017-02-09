@@ -54,7 +54,6 @@
         <overwrite_question_views>false</overwrite_question_views>
 
         <packages>
-            <package>jqueryui</package>
             <package>jquery-touch-punch</package>
         </packages>
     </engine>
