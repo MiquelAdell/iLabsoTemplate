@@ -2,11 +2,11 @@ body .navbar-default .navbar-brand {
 	background-image: url('../images/logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
-	padding-left: 200px;
+	padding-left: 300px;
 
 	@media (max-width: 801px) {
 		background-image: url('../images/logo-min.png');
-		padding-left: 50px;
+		padding-left: 70px;
 	}
 }
 

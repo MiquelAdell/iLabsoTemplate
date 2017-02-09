@@ -1,11 +1,14 @@
-$navbar-background-color: $brand-primary !default;
+$navbar-background-color: white !default;
 $navbar-inverse-background-color: $brand-inverse !default;
-$navbar-text-color: white;
-$navbar-inverse-text-color: $navbar-text-color;
+$navbar-text-color: black;
+$navbar-inverse-text-color: black;
+$navbar-other: grey;
 
-.navbar-default {
+body .navbar-default {
   background-color: $navbar-background-color;
-  border-color: lighten($navbar-background-color,20%);
+  border-color: $brand-primary;
+  border-bottom: 5px solid $brand-primary;
+  box-shadow: 0;
 }
 .navbar-default .navbar-brand {
   color: $navbar-text-color;
@@ -19,18 +22,21 @@ $navbar-inverse-text-color: $navbar-text-color;
   color: $navbar-text-color;
 }
 .navbar-default .navbar-nav > li > a {
-  color: $navbar-text-color;
+  color: $brand-inverse;
+  @media (max-width: 1199px) {
+    color: white;
+  }
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: $navbar-inverse-text-color;
-  background-color: lighten($navbar-background-color,20%);
+  background-color: $brand-primary;
+  color: white;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: $navbar-inverse-text-color;
-  background-color: lighten($navbar-background-color,20%);
+  background-color: $navbar-other;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -39,31 +45,19 @@ $navbar-inverse-text-color: $navbar-text-color;
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: lighten($navbar-background-color,20%);
+  border-color: black;
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: lighten($navbar-background-color,20%);
+  background-color: $brand-inverse;
   .icon-bar{
-    background-color: $navbar-text-color;
+    background-color: white;
   }
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: lighten($navbar-background-color,20%);
+  background-color: black;
 }
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: lighten($navbar-background-color,20%);
-  &.collapsing {
-    border-color: transparent;
-  }
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  background-color: lighten($navbar-background-color,20%);
-  color: $navbar-text-color;
-}
+
 @media (max-width: 1199px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: $navbar-text-color;
@@ -71,13 +65,13 @@ $navbar-inverse-text-color: $navbar-text-color;
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: $navbar-text-color;
-    background-color: lighten($navbar-background-color,20%);
+    background-color: $navbar-other;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: $navbar-text-color;
-    background-color: lighten($navbar-background-color,20%);
+    background-color: $navbar-other;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -105,113 +99,10 @@ fieldset[disabled] .navbar-default .btn-link:hover,
 fieldset[disabled] .navbar-default .btn-link:focus {
   color: lighten($navbar-text-color,40%);
 }
-.navbar-inverse {
-  background-color: $navbar-inverse-background-color;
-  border-color: lighten($navbar-inverse-background-color,20%);
-}
-.navbar-inverse .navbar-brand {
-  color: $navbar-text-color;
-}
-.navbar-inverse .navbar-brand:hover,
-.navbar-inverse .navbar-brand:focus {
-  color: $navbar-text-color;
-  background-color: none;
-}
-.navbar-inverse .navbar-text {
-  color: $navbar-text-color;
-}
-.navbar-inverse .navbar-nav > li > a {
-  color: $navbar-text-color;
-}
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  color: $navbar-text-color;
-  background-color: lighten($navbar-inverse-background-color,20%);
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  color: $navbar-text-color;
-  background-color: lighten($navbar-inverse-background-color,20%);
-}
-.navbar-inverse .navbar-nav > .disabled > a,
-.navbar-inverse .navbar-nav > .disabled > a:hover,
-.navbar-inverse .navbar-nav > .disabled > a:focus {
-  color: lighten($navbar-text-color,40%);
-  background-color: transparent;
-}
-.navbar-inverse .navbar-toggle {
-  border-color: lighten($navbar-inverse-background-color,20%);
-}
-.navbar-inverse .navbar-toggle:hover,
-.navbar-inverse .navbar-toggle:focus {
-  background-color: lighten($navbar-inverse-background-color,20%);
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-  background-color: $navbar-text-color;
-}
-.navbar-inverse .navbar-collapse,
-.navbar-inverse .navbar-form {
-  border-color: lighten($navbar-inverse-background-color,20%);
-}
-.navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-  background-color: lighten($navbar-inverse-background-color,20%);
-  color: $navbar-text-color;
-}
-@media (max-width: 1199px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
-    border-color: lighten($navbar-inverse-background-color,20%);
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
-    background-color: lighten($navbar-inverse-background-color,20%);
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: $navbar-text-color;
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: $navbar-text-color;
-    background-color: lighten($navbar-inverse-background-color,20%);
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: $navbar-text-color;
-    background-color: lighten($navbar-inverse-background-color,20%);
-  }
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: lighten($navbar-text-color,40%);
-    background-color: transparent;
-  }
-}
-.navbar-inverse .navbar-link {
-  color: $navbar-text-color;
-}
-.navbar-inverse .navbar-link:hover {
-  color: $navbar-text-color;
-}
-.navbar-inverse .btn-link {
-  color: $navbar-text-color;
-}
-.navbar-inverse .btn-link:hover,
-.navbar-inverse .btn-link:focus {
-  color: $navbar-text-color;
-}
-.navbar-inverse .btn-link[disabled]:hover,
-fieldset[disabled] .navbar-inverse .btn-link:hover,
-.navbar-inverse .btn-link[disabled]:focus,
-fieldset[disabled] .navbar-inverse .btn-link:focus {
-  color: lighten($navbar-text-color,40%);
-}
-
 
 @media (max-width: 1199px) {
   .nav.navbar-nav.navbar-right {
-      background-color: #c66;
+      background-color: $brand-primary;
       margin-top: 108px;
       margin-left: 15px;
   }
