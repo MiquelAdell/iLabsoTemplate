@@ -1,33 +1,42 @@
 {
-  "name": "ilabsotemplate",
-  "description": "Lime survey template with bootstrap+sass+gulp based on ubuntu_orange",
-  "main": "",
-  "authors": [
-    "Miquel Adell"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "limesurvey",
-    "css",
-    "gulp",
-    "scss",
-    "sass",
-    "mobile-first",
-    "responsive"
-  ],
-  "homepage": "https://github.com/MiquelAdell/ilabsotemplate",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "v4.0.0-alpha.5",
-    "seiyria-bootstrap-slider": "^9.6.1",
-    "bootstrap-material-design": "^4.0.2",
-    "font-awesome": "fontawesome#^4.7.0",
-    "parallax.js": "^1.4.2"
-  }
+	"name": "ilabsotemplate",
+	"description": "Lime survey template with bootstrap+sass+gulp based on ubuntu_orange",
+	"main": "",
+	"authors": [
+		"Miquel Adell"
+	],
+	"license": "MIT",
+	"keywords": [
+		"limesurvey",
+		"css",
+		"gulp",
+		"scss",
+		"sass",
+		"mobile-first",
+		"responsive"
+	],
+	"homepage": "https://github.com/MiquelAdell/ilabsotemplate",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bootstrap": "v4.0.0-alpha.5",
+		"seiyria-bootstrap-slider": "^9.6.1",
+		"bootstrap-material-design": "^4.0.2",
+		"font-awesome": "fontawesome#^4.7.0",
+		"parallax.js": "^1.4.2",
+		"jquery-ui": "^1.12.1"
+	},
+	"overrides": {
+		"jquery-ui": {
+			"main": [
+				"./themes/base/jquery-ui.css",
+				"./jquery-ui.js"
+			]
+		}
+	}
 }
