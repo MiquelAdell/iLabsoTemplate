@@ -1,9 +1,9 @@
 body .navbar-default .navbar-brand {
 	background-image: url(../images/logo.png),url(../images/logo-ajuntament.png);
-    background-size: contain, 200px;
-    background-position: left, 280px;
+    background-size: 150px, 150px;
+    background-position: left, 170px;
     background-repeat: no-repeat;
-    padding-left: 530px;
+    padding-left: 380px;
 
 	@media (max-width: 801px) {
 		background-image: url(../images/logo-min.png),url(../images/logo-ajuntament-min.png);
