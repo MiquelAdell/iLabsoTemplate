@@ -1,0 +1,19 @@
+body .navbar-default .navbar-brand {
+	background-image: url(../images/logo.png),url(../images/logo-ajuntament.png);
+    background-size: 150px, 150px;
+    background-position: left, 170px;
+    background-repeat: no-repeat;
+    padding-left: 380px;
+
+	@media (max-width: 801px) {
+		background-image: url(../images/logo-min.png),url(../images/logo-ajuntament-min.png);
+		background-position: left, 70px;
+		background-size: contain, 30px;
+		padding-left: 120px;
+	}
+}
+
+
+html body .navbar.navbar-default.navbar-fixed-top {
+	padding: 5px 0px;
+}
