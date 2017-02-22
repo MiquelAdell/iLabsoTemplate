@@ -135,7 +135,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','joventut.zip'], cb);
+	return del(['dist','*.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
@@ -160,13 +160,14 @@ gulp.task('do-zip', function(cb){
 				'!test/',
 				'!test/**',
 				'!.*',
+				'!*.zip',
 				'!gulpfile.js',
 				'!package.json',
 				'!bower.json',
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('joventut.zip'))
+        .pipe(zip('bages.zip'))
         .pipe(gulp.dest('./'));
 });
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <metadatas>
-        <name>joventud</name>
+        <name>bages</name>
         <creationDate>2017-01-04 10:00:00</creationDate>
         <author>Miquel Adell Borràs</author>
         <authorEmail>miquel@miqueladell.com</authorEmail>
@@ -54,7 +54,6 @@
         <overwrite_question_views>false</overwrite_question_views>
 
         <packages>
-            <package>jqueryui</package>
             <package>jquery-touch-punch</package>
         </packages>
     </engine>
