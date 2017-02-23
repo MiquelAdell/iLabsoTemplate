@@ -1,15 +1,15 @@
 body .navbar-default .navbar-brand {
-	background-image: url(../images/logo.png),url(../images/logo-ajuntament.png);
-    background-size: 150px, 150px;
-    background-position: left, 170px;
+	background-image: url(../images/logo.png);
+    background-size: 150px;
+    background-position: left;
     background-repeat: no-repeat;
-    padding-left: 380px;
+    padding-left: 190px;
 
 	@media (max-width: 801px) {
-		background-image: url(../images/logo-min.png),url(../images/logo-ajuntament-min.png);
-		background-position: left, 70px;
-		background-size: contain, 30px;
-		padding-left: 120px;
+		background-size: auto 30px;
+	    background-position: left;
+		background-image: url(../images/logo-min.png);
+		padding-left: 60px;
 	}
 }
 

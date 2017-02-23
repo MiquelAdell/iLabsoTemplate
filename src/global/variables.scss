@@ -1,8 +1,9 @@
 $font-size-root: 16px ;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
 
-$font-family-sans-serif: "Arial", sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:300,400,700,900');
+
+$font-family-sans-serif: 'Fira Sans Condensed', sans-serif;;
 $font-family-serif:      'Open Sans', serif;
 
 $font-family-base:       $font-family-sans-serif;
@@ -10,9 +11,9 @@ $headings-font-family:   $font-family-sans-serif;
 
 
 
-$brand-primary: #F14C16;
-$brand-inverse: #013b6c;
+$brand-primary: #a1a150;
+$brand-inverse: #803541;
 // $brand-success:             #5cb85c !default;
-// $brand-info:                #5bc0de !default;
+$brand-info:                #234e31 !default;
 // $brand-warning:             #f0ad4e !default;
 // $brand-danger:              #d9534f !default;
