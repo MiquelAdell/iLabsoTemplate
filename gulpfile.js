@@ -177,7 +177,7 @@ gulp.task('do-zip', function(cb){
 			// 			return $('config metadatas name').text();
 			// 		}))+
 			// '.zip')
-			zip('aracoop.zip')
+			zip('confederacio.zip')
 		)
 		.pipe(gulp.dest('./'));
 });
