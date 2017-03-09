@@ -103,7 +103,7 @@ $(document).ready(function()
         }
     }
 
-    // $('#outerframeContainer').css({marginTop:outerframeDistanceFromTop+'px'});
+    $('#outerframeContainer').css({marginTop:outerframeDistanceFromTop+'px'});
 
     $('.language-changer').each(function(){
         $that = $(this);
