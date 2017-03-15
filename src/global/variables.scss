@@ -1,15 +1,15 @@
 $font-size-root: 16px ;
 
-@import url('https://fonts.googleapis.com/css?family=Anton');
+// @import url('https://fonts.googleapis.com/css?family=Anton');
 
 $font-family-sans-serif: "Arial", "helvetica","sans-serif";
 $font-family-serif:      serif;
 
 $font-family-base:       $font-family-sans-serif;
-$headings-font-family:   "Anton", "Arial", "helvetica", "sans-serif";
+$headings-font-family:   "Arial", "helvetica", "sans-serif";
 
-$brand-primary: hsla(192, 85%, 62%, 1);
-$brand-inverse: hsla(192, 20%, 12%, 1);
+$brand-primary: #E4013A;
+$brand-inverse: #1BFEC5;
 // $brand-success:             #5cb85c !default;
 // $brand-info:                #5bc0de !default;
 // $brand-warning:             #f0ad4e !default;

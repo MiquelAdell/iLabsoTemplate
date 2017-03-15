@@ -1,6 +1,18 @@
+
+
         </div> <!-- main-col -->
     </div><!-- main-row -->
 </div><!-- outerframe -->
+
+<div class="footer">
+  <div class="row">
+    <div class="col-xs-12 col">
+		<div class="logos">
+			<h3>Amb el suport de:</h3>
+	    	<div class="logo1"></div><div class="logo2"></div>
+		</div>
+    </div>
+</div>
 
 <!-- Bootstrap Modal Alert -->
 <div id="bootstrap-alert-box-modal" class="modal fade">
