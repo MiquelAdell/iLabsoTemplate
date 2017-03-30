@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <metadatas>
-        <name>bages</name>
-        <creationDate>2017-01-04 10:00:00</creationDate>
+        <name>confederacio</name>
+        <creationDate>2017-05-15 10:00:00</creationDate>
         <author>Miquel Adell Borràs</author>
         <authorEmail>miquel@miqueladell.com</authorEmail>
         <authorUrl>http://www.miqueladell.com</authorUrl>
@@ -10,7 +10,7 @@
         <license>GNU General Public License version 2 or later</license>
         <version>1.0</version>
         <description>LimeSurvey Template</description>
-        <last_update>2017-01-14 10:00:00</last_update>
+        <last_update>2017-05-15 10:00:00</last_update>
     </metadatas>
 
     <!--

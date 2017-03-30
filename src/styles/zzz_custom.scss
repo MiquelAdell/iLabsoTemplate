@@ -1,0 +1,90 @@
+.navbar-fixed-top .navbar-collapse {
+	position: fixed;
+	right: 15px;
+}
+
+.nav.navbar-nav.navbar-right {
+	@media (max-width: 767px) {
+		background-color: lighten($brand-primary,20%);
+		margin-top: 108px;
+		margin-left: 15px;
+	}
+}
+
+.navbar-default .navbar-toggle {
+	position: absolute;
+	z-index: 10;
+}
+
+#surveydescription, .group-name {
+
+}
+
+.navbar {
+	border-bottom: 3px solid $brand-primary !important;
+	box-shadow: none;
+	padding: 10px 0px !important;
+}
+
+body .navbar-default .navbar-brand {
+	font-size: 150%;
+	@media (max-width: 767px) {
+		font-size: 100%;
+	}
+
+}
+// .navbar-default .navbar-nav>li>a {
+// 	background: $brand-primary;
+// 	color: black;
+// 	text-transform: uppercase;
+// 	font-weight: bold;
+// 	line-height: 1em;
+// 	padding: 0;
+// 	margin: 1em;
+// 	cursor: pointer;
+//
+// 	@media (max-width: 1199px) {
+// 		background: transparent;
+// 		color: $brand-primary;
+// 	}
+// }
+
+form > .row {
+	margin-top: 35px;
+}
+
+
+.footer {
+	.col {
+		margin-top: 50px;
+		border-top: 1px solid $brand-primary;
+	}
+	.logos {
+		height: 100px;
+		width: 500px;
+		margin: 0px auto;
+	    color: $brand-primary;
+	    margin-top: 1em;
+		h3 {
+		font-size: 100% !important;
+		border-bottom: 1px solid $brand-primary;
+		}
+
+	}
+	.logo1, .logo2 {
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 200px;
+		height: 50px;
+		margin: 10px 25px 50px;
+		float: left;
+		display: block;
+		text-align: center;
+	}
+	.logo1 {
+		background-image: url('../images/generalitat.jpg');
+	}
+	.logo2 {
+		background-image: url('../images/ministeri.png');
+	}
+}
