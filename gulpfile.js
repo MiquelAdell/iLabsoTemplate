@@ -177,7 +177,7 @@ gulp.task('do-zip', function(cb){
 			// 			return $('config metadatas name').text();
 			// 		}))+
 			// '.zip')
-			zip('confederacio.zip')
+			zip('retorn-social.zip')
 		)
 		.pipe(gulp.dest('./'));
 });
