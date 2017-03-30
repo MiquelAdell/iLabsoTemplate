@@ -1,3 +1,39 @@
+body {
+	line-height: 1.125;
+}
+body .navbar-default .navbar-brand {
+	font-weight: 900 !important;
+	text-transform: uppercase !important;
+	font-size: 1.4vw;
+	@media (max-width: 801px) {
+		font-size: 100%;
+	}
+}
+
+body h1, body h2, body h3 {
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a {
+	text-transform: uppercase;
+	font-size: 0.9vw;
+
+	@media (max-width: 801px) {
+		font-size: 100%;
+	}
+	margin-left: 0.25em;
+    margin-right: 0.25em;
+	font-weight: 600;
+}
+
+.navbar-default .navbar-nav>li:first-child a {
+	margin-left: 0;
+}
+.navbar-default .navbar-nav>li:last-child a {
+	margin-right: 0;
+}
+
 .navbar-fixed-top .navbar-collapse {
 	position: fixed;
 	right: 15px;
@@ -14,4 +50,21 @@
 .navbar-default .navbar-toggle {
 	position: absolute;
 	z-index: 10;
+}
+
+.question-text {
+	font-weight: 300;
+}
+
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+	width: auto !important;
+}
+
+body {
+	background-color: $brand-inverse;
+}
+
+body .outerframe {
+	background-color: white;
+	padding: 0 100px 200px 100px;
 }

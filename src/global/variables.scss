@@ -1,17 +1,15 @@
 $font-size-root: 16px ;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-$font-family-sans-serif: "Arial", sans-serif;
-$font-family-serif:      'Open Sans', serif;
+$font-family-sans-serif: "Open Sans", "helvetica","sans-serif";
+$font-family-serif:      serif;
 
 $font-family-base:       $font-family-sans-serif;
-$headings-font-family:   $font-family-sans-serif;
+$headings-font-family:   "Open Sans", "helvetica", "sans-serif";
 
-
-
-$brand-primary: #F14C16;
-$brand-inverse: #013b6c;
+$brand-primary: #0f5c7e;
+$brand-inverse: #70c5b0;
 // $brand-success:             #5cb85c !default;
 // $brand-info:                #5bc0de !default;
 // $brand-warning:             #f0ad4e !default;

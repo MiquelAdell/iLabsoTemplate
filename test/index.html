@@ -65,15 +65,16 @@ setJsVar();
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<span class="navbar-brand col-xs-10 col-sm-12" >Slightly Trickier Sample Survey</span>
+		<span class="navbar-brand col-xs-10 col-sm-12" >Reutilització d'ampolles de vi al sector vitivinícola del sud d'europa</span>
 	</div>
 
 	<div id="navbar" class="navbar-collapse collapse col-xs-12">
 		<ul class="nav navbar-nav">
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#" id="clearallbtnlink">Exit and clear survey</a></li>
-		</ul>
+            <li><a href="#" id="saveallbtnlink">Continuar més tard</a></li>
+            <li><a href="#" id="clearallbtnlink">Sortir i esborrar les respostes</a></li>
+        </ul>
 	</div><!--/.nav-collapse -->
 </nav>
 
@@ -1048,6 +1049,9 @@ $(document).on('change', 'div#522584X33X700-container input:radio', function (ev
 
 
 
+
+
+
 	<!-- PRESENT THE QUESTIONS (in SurveyRunTime )  -->
 	<!-- Question -->
 			<div id="question30" class="yes-no  col-xs-12 question-container">
@@ -1056,7 +1060,7 @@ $(document).on('change', 'div#522584X33X700-container input:radio', function (ev
 					<div class="row question-wrapper question-title-container">
 							<div class="col-sm-12 questiontext">
 									<div class="qnumcode question-text">
-									 <p align="justify" style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">La vostra entitat fa alguna actuació o té algun</span></font></font><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">a estratègia/</span></font></font><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">protocol d’interacció amb el turisme que considereu una bona pràctica?</span></font></font></p>
+									 <p align="justify" style="margin-bottom: 0cm; line-height: 100%"><span style="background: transparent">La vostra entitat fa alguna actuació o té algun</span><span style="background: transparent">a estratègia/</span><span style="background: transparent">protocol d’interacció amb el turisme que considereu una bona pràctica?</span></p>
 
 									</div>
 
@@ -1457,7 +1461,7 @@ $(document).on('change', 'div#522584X33X700-container input:radio', function (ev
 					<div class="row question-wrapper question-title-container">
 							<div class="col-sm-12 questiontext">
 									<div class="qnumcode question-text">
-									 <p align="justify" style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">Coneixeu alguna actuació, protocol o experiència d’alguna altra entitat que considereu una bona pràctica? Aquesta experiència pot ser tant a nivell de Barcelona com de fora.</span></font></font></p>
+									 <p align="justify" style="margin-bottom: 0cm; line-height: 100%"><span style="background: transparent">Coneixeu alguna actuació, protocol o experiència d’alguna altra entitat que considereu una bona pràctica? Aquesta experiència pot ser tant a nivell de Barcelona com de fora.</span></p>
 
 									</div>
 
@@ -4793,7 +4797,7 @@ $(document).on('change', 'div#522584X33X700-container input:radio', function (ev
 					<div class="row question-wrapper question-title-container">
 							<div class="col-sm-12 questiontext">
 									<div class="qnumcode question-text">
-									 <p style="margin-bottom: 0cm; line-height: 100%"><font face="Liberation Sans"><font size="3" style="font-size: 12pt"><span style="background: transparent">En quins dels següents àmbits són usuaris dels serveis els turistes o el sector turístic?</span></font></font></p>
+									 <p style="margin-bottom: 0cm; line-height: 100%"><span style="background: transparent">En quins dels següents àmbits són usuaris dels serveis els turistes o el sector turístic?</span></p>
 
 									</div>
 
@@ -8892,6 +8896,16 @@ jQuery('body').popover({'selector':'a[rel=popover]'});
 jQuery('body').tooltip({'selector':'a[rel=tooltip]'});
 /*]]>*/
 </script>
+
+<div class="footer">
+  <div class="row">
+    <div class="col-xs-12 col">
+		<div class="logos">
+			<h3>Amb el suport de:</h3>
+	    	<div class="logo1"></div><div class="logo2"></div>
+		</div>
+    </div>
+</div>
 </body>
 </html>
 <!-- end of frontend_helper /  display_first_page -->
