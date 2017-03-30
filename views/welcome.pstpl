@@ -4,11 +4,6 @@
 <script>
 document.getElementById("checkjavascript").style.display = 'none';
 </script>
-<!-- Survey Description -->
-<div class="parallax-window" data-parallax="scroll" data-image-src="{TEMPLATEURL}/dist/images/parallax.jpg"></div>
-<h1>{SURVEYNAME}</h1><br />
-<p class='surveydescription text-info'>{SURVEYDESCRIPTION}</p>
-</div>
 <!-- Survey Welcome -->
 <div class="row survey-welcome">
     <div class="col-sm-12 ">

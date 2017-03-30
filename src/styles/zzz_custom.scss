@@ -164,3 +164,34 @@ form > .row {
 		background-image: url('../images/ministeri.png');
 	}
 }
+.parallax-window {
+
+	padding: 20% 0;
+	position: relative;
+	&:after {
+		content: " ";
+		background: black;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0.4;
+		z-index: 1;
+	}
+	h1 {
+		font-size: 3vw;
+		color: white !important;
+		text-align: center;
+		text-transform: uppercase;
+		position: relative;
+		z-index: 2;
+	}
+	p {
+		font-size: 2vw;
+		color: white !important;
+		text-align: center;
+		position: relative;
+		z-index: 2;
+	}
+}
