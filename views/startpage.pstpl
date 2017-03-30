@@ -48,6 +48,10 @@
         </div><!--/.nav-collapse -->
     </nav>
 
+    <div class="parallax-window" data-parallax="scroll" data-image-src="/templates/ilabsoTemplate/dist/images/parallax.jpg">
+        <div class="surveydescription">{SURVEYDESCRIPTION}</div>
+    </div>
+
 	<!-- Top container -->
 	<div id="topContainer" class="jumbotron">
 		<div class="container">

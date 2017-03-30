@@ -1,7 +1,4 @@
-$navbar-background-color: white !default;
-$navbar-inverse-background-color: white !default;
-$navbar-text-color: $brand-primary ;
-$navbar-inverse-text-color: black;
+@import "../global/variables";
 
 .navbar-default {
 	background-color: $navbar-background-color;
