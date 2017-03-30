@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.0.0" encoding="UTF-8"?>
 <config>
     <metadatas>
         <name>confederacio</name>
-        <creationDate>2017-05-15 10:00:00</creationDate>
+        <creationDate>2016-05-15 10:00:00</creationDate>
         <author>Miquel Adell Borràs</author>
         <authorEmail>miquel@miqueladell.com</authorEmail>
         <authorUrl>http://www.miqueladell.com</authorUrl>
         <copyright>Copyright (C) 2017 Miquel Adell. Some rights reserved.</copyright>
         <license>GNU General Public License version 2 or later</license>
-        <version>1.0</version>
+        <version>2.0.0</version>
         <description>LimeSurvey Template</description>
-        <last_update>2017-05-15 10:00:00</last_update>
+        <last_update>2017-03-30 10:00:00</last_update>
     </metadatas>
 
     <!--
