@@ -1,15 +1,25 @@
 $font-size-root: 16px ;
 
-// @import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-$font-family-sans-serif: "Arial", "helvetica","sans-serif";
+$font-family-sans-serif: "Montserrat", "helvetica","sans-serif";
 $font-family-serif:      serif;
 
-$font-family-base:       $font-family-sans-serif;
-$headings-font-family:   "Arial", "helvetica", "sans-serif";
+$font-family-base:       "helvetica", "sans-serif";
+$headings-font-family:   $font-family-sans-serif;
 
-$brand-primary: #E4013A;
-$brand-inverse: #1BFEC5;
+$brand-primary: #b70d01;
+$brand-inverse: #a1c434;
+$body-background: #ffffff;
+
+$navbar-background-color: white !default;
+$navbar-inverse-background-color: white !default;
+$navbar-text-color: black ;
+$navbar-inverse-text-color: $brand-primary;
+
+
+$big-logo-width: 150px;
+
 // $brand-success:             #5cb85c !default;
 // $brand-info:                #5bc0de !default;
 // $brand-warning:             #f0ad4e !default;

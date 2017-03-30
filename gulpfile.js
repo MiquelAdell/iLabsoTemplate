@@ -177,7 +177,7 @@ gulp.task('do-zip', function(cb){
 			// 			return $('config metadatas name').text();
 			// 		}))+
 			// '.zip')
-			zip('aracoop.zip')
+			zip('retorn_social.zip')
 		)
 		.pipe(gulp.dest('./'));
 });
