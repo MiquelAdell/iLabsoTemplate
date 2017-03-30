@@ -59,3 +59,12 @@ body h1, body h2, body h3 {
 input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
 	width: auto !important;
 }
+
+body {
+	background-color: $brand-inverse;
+}
+
+body .outerframe {
+	background-color: white;
+	padding: 0 100px 200px 100px;
+}
