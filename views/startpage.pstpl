@@ -49,10 +49,7 @@
     </nav>
 
 	<!-- Top container -->
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{TEMPLATEURL}images/parallax.jpg">
-        <div class="surveydescription">{SURVEYDESCRIPTION}</div>
-    </div>
-	<div id="topContainer" class="jumbotron">
+    <div id="topContainer" class="jumbotron">
 		<div class="container">
 			{PERCENTCOMPLETE}
 			{LANGUAGECHANGER}
