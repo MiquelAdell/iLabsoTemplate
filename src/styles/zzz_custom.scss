@@ -131,38 +131,41 @@ form > .row {
 
 
 .footer {
-	.col {
-		margin-top: 50px;
-		border-top: 1px solid $brand-primary;
+	.logos-row {
+		display: none;
 	}
-	.logos {
-		height: 100px;
-		width: 500px;
-		margin: 0px auto;
-	    color: $brand-primary;
-	    margin-top: 1em;
-		h3 {
-		font-size: 100% !important;
-		border-bottom: 1px solid $brand-primary;
-		}
-
-	}
-	.logo1, .logo2 {
-		background-size: contain;
-		background-repeat: no-repeat;
-		width: 200px;
-		height: 50px;
-		margin: 10px 25px 50px;
-		float: left;
-		display: block;
-		text-align: center;
-	}
-	.logo1 {
-		background-image: url('../images/generalitat.jpg');
-	}
-	.logo2 {
-		background-image: url('../images/ministeri.png');
-	}
+	// .col {
+	// 	margin-top: 50px;
+	// 	border-top: 1px solid $brand-primary;
+	// }
+	// .logos {
+	// 	height: 100px;
+	// 	width: 500px;
+	// 	margin: 0px auto;
+	//     color: $brand-primary;
+	//     margin-top: 1em;
+	// 	h3 {
+	// 	font-size: 100% !important;
+	// 	border-bottom: 1px solid $brand-primary;
+	// 	}
+	//
+	// }
+	// .logo1, .logo2 {
+	// 	background-size: contain;
+	// 	background-repeat: no-repeat;
+	// 	width: 200px;
+	// 	height: 50px;
+	// 	margin: 10px 25px 50px;
+	// 	float: left;
+	// 	display: block;
+	// 	text-align: center;
+	// }
+	// .logo1 {
+	// 	background-image: url('../images/logo-footer-1.jpg');
+	// }
+	// .logo2 {
+	// 	background-image: url('../images/logo-footer-2.png');
+	// }
 }
 .parallax-window {
 
