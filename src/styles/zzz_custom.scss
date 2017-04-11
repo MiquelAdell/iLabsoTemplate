@@ -41,7 +41,7 @@ body h1, body h2, body h3 {
 
 .nav.navbar-nav.navbar-right {
 	@media (max-width: 767px) {
-		background-color: lighten($brand-primary,20%);
+		background-color: white;
 		margin-top: 108px;
 		margin-left: 15px;
 	}
@@ -69,7 +69,7 @@ body .outerframe {
 	padding: 0 100px 200px 100px;
 }
 .parallax-window {
-    min-height: 600px;
+    min-height: 400px;
     background: transparent;
 }
 
@@ -81,7 +81,7 @@ body .outerframe {
 
 .nav.navbar-nav.navbar-right {
 	@media (max-width: 767px) {
-		background-color: lighten($brand-primary,20%);
+		background-color: $navbar-background-color;
 		margin-top: 108px;
 		margin-left: 15px;
 	}
@@ -166,7 +166,7 @@ form > .row {
 }
 .parallax-window {
 
-	padding: 20% 0;
+	padding: 150px 50px;
 	position: relative;
 	&:after {
 		content: " ";
@@ -180,7 +180,7 @@ form > .row {
 		z-index: 1;
 	}
 	h1 {
-		font-size: 3vw;
+		font-size: 50px;
 		color: white !important;
 		text-align: center;
 		text-transform: uppercase;
@@ -188,7 +188,7 @@ form > .row {
 		z-index: 2;
 	}
 	p {
-		font-size: 2vw;
+		font-size: 25px;
 		color: white !important;
 		text-align: center;
 		position: relative;

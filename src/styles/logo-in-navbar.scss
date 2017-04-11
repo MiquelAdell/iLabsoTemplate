@@ -5,6 +5,12 @@ body .navbar-default .navbar-brand {
 	background-size: contain;
 	background-repeat: no-repeat;
 	padding-left: $big-logo-width;
+	@media (max-width: 801px) {
+		background-size: auto 30px;
+		background-position: left;
+		background-image: url(../images/logo-min.png);
+		padding-left: 40px;
+	}
 }
 
 
