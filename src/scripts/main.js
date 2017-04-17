@@ -10,6 +10,8 @@
 				$(this).find(">:first-child").click();
 			}
 		});
+		$('#tokenmessage h3').html("Introdueix el token");
+		$('#tokenmessage').css('visibility','visible');
 	});
 	$(window).scroll(function() {
 		var scroll = $(window).scrollTop();

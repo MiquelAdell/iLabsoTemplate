@@ -67,10 +67,9 @@ body {
 body .outerframe {
 	background-color: white;
 	padding: 0 100px 200px 100px;
-}
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
+	@media (max-width: 767px) {
+		padding: 5vw;
+	}
 }
 
 
@@ -168,7 +167,8 @@ form > .row {
 	// }
 }
 .parallax-window {
-
+	min-height: 400px;
+    background: transparent;
 	padding: 150px 50px;
 	position: relative;
 	&:after {
@@ -184,6 +184,9 @@ form > .row {
 	}
 	h1 {
 		font-size: 50px;
+		@media (max-width: 767px) {
+			font-size: 10vw;
+		}
 		color: white !important;
 		text-align: center;
 		text-transform: uppercase;
@@ -197,4 +200,25 @@ form > .row {
 		position: relative;
 		z-index: 2;
 	}
+}
+
+#tokenmessage {
+	visibility: hidden;
+}
+
+.ui-sortable-handle {
+    text-align: center;
+	img {
+	    max-width: 100%;
+	    height: auto !important;
+		margin: 0.25em 0;
+	}
+}
+
+
+
+.SortableTitle {
+    height: 2em;
+    margin: 2em 0 1em 0;
+    text-align: center;
 }
