@@ -42,7 +42,7 @@
         </div><!--/.nav-collapse -->
     </nav>
 
-    <div class="parallax-window" data-parallax="scroll" data-image-src="{TEMPLATEURL}/dist/images/background-1900.jpg"></div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{TEMPLATEURL}/dist/images/parallax.jpg?f"></div>
 
 
     <!-- Top container -->
