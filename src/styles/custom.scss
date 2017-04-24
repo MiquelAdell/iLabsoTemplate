@@ -13,22 +13,22 @@ body .navbar-default  {
 }
 
 .logo-2 {
-    width: 25%;
+    width: 195px;
     height: 57px;
-    background-image: url('../images/logo-2.png');
+    background-image: url(../images/logo-2.png);
     background-repeat: no-repeat;
-    background-position: 90% center;
+    background-position: right center;
     background-size: auto 50px;
-    float: left;
-
+    float: right;
+    margin-right: 15px;
 }
 
 .logo {
     height: 57px;
-    width: 25%;
+    width: 80px;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
-    background-position: 10% center;
+    background-position: 15px center;
     float: left;
     background-size: contain;
 }
@@ -70,8 +70,8 @@ body .navbar-default .navbar-brand {
     position: relative;
     @media (max-width : 1200px) {
         .logo {
-            background-image: url('../images/logo-min.png');
-            width: 50px;
+            // background-image: url('../images/logo-min.png');
+            // width: 50px;
             position: absolute;
             left: 5px;
             background-position: 5px center;

@@ -135,7 +135,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','barometre-tecer-sector.zip'], cb);
+	return del(['dist','barometre-tercer-sector.zip'], cb);
 });
 
 gulp.task('build', function (cb) {

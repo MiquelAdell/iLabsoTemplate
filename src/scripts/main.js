@@ -9,7 +9,7 @@
 	});
 })(jQuery);
 
-function inputChange(input){
+function inputChange(question,input){
 		var td = input.closest('td');
 		var currentRow = td.data('custom-row');
 		var currentCol = td.data('custom-col');
@@ -45,6 +45,12 @@ function totalizeQuestion(question){
 	var cols = question.find('tbody tr').length;
 
 	var nR = 0;
+	question.find('tbody tr .answertext').each(function(){
+		$(this).removeClass("col-sm-6");
+		$(this).removeClass("col-xs-12");
+	});
+
+
 	question.find('tbody tr').each(function(){
 		var tr = $(this);
 
@@ -77,11 +83,11 @@ function totalizeQuestion(question){
 
 
 	question.find('tbody tr input[type=text]:not(.disabled)').change(function(){
-		inputChange($(this));
+		inputChange(question,$(this));
 	});
 
 	question.find('tbody tr input[type=text]:not(.disabled)').each(function(){
-		inputChange($(this));
+		inputChange(question,$(this));
 	});
 }
 
