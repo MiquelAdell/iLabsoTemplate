@@ -135,7 +135,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','turisme-tercer-sector.zip'], cb);
+	return del(['dist','barometre-tecer-sector.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
@@ -166,7 +166,7 @@ gulp.task('do-zip', function(cb){
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('turisme-tercer-sector.zip'))
+        .pipe(zip('barometre-tercer-sector.zip'))
         .pipe(gulp.dest('./'));
 });
 

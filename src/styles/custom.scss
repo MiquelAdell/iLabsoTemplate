@@ -17,19 +17,20 @@ body .navbar-default  {
     height: 57px;
     background-image: url('../images/logo-2.png');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: 90% center;
     background-size: auto 50px;
     float: left;
 
 }
 
-.logo-taula {
+.logo {
     height: 57px;
     width: 25%;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
-    background-position: 10px center;
+    background-position: 10% center;
     float: left;
+    background-size: contain;
 }
 
 .brand-text {
@@ -68,12 +69,12 @@ html body .navbar.navbar-default.navbar-fixed-top {
 body .navbar-default .navbar-brand {
     position: relative;
     @media (max-width : 1200px) {
-        .logo-taula {
+        .logo {
             background-image: url('../images/logo-min.png');
             width: 50px;
             position: absolute;
             left: 5px;
-            background-position: 0 center;
+            background-position: 5px center;
             background-size: contain;
         }
 
@@ -126,10 +127,10 @@ body .navbar-default .navbar-brand {
     float: left;
     a {
         padding: 15px !important;
-        @media (max-width: 480px) {
+        @media (max-width: 500px) {
             font-size: 12px;
             line-height: 15px;
-            padding: 15px 10px !important;
+            padding: 5px !important;
         }
     }
 }
@@ -137,4 +138,26 @@ body .navbar-default .navbar-brand {
 .navbar-right {
     float: right !important;
     margin: 0 !important;
+}
+
+@media (max-width: 767px){
+.navbar-nav .open .dropdown-menu {
+    background: white !important;
+}
+}
+
+
+#navbar {
+    @media (max-width: 500px) {
+        height: auto !important;
+    }
+}
+
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color: white !important;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: white !important;
+}
 }
