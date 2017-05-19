@@ -161,3 +161,86 @@ body .navbar-default .navbar-brand {
     color: white !important;
 }
 }
+
+.navbar-nav>li>.dropdown-menu {
+    padding: 0.5em;
+    a {
+       padding: 0 !important;
+   }
+}
+
+.question-title-container {
+    font-weight: bold  !important;
+}
+
+/*
+pressupost
+*/
+#question10603,
+#question10607,
+#question10610,
+#question10630 {
+
+}
+/*
+percentatge
+*/
+#question10604,
+#question11138,
+#question11172 {
+
+}
+/*
+persones
+*/
+#question10615,
+#question10628,
+#question11281,
+#question10819,
+#question11095,
+#question10862 {
+    .form-control {
+        max-width: 4.5em  !important;
+        margin: 0px auto  !important;
+    }
+}
+
+
+.table>thead>tr>th {
+    text-align: center  !important;
+}
+
+
+.withsuffix {
+    width: 600px;
+    margin: 0px auto;
+    float: none;
+    clear: both;
+    line-height: 38px;
+    .form-control {
+        width: 500px;
+        float: left;
+        margin-right: 1em;
+    }
+}
+
+#question10603 {
+    #totals_10603 {
+        thead td {
+            width: 40% !important;
+        }
+        thead th {
+            width: 20% !important;
+        }
+    }
+}
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    color: white !important;
+}
+
+
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
+ width: auto !important;
+}

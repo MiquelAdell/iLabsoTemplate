@@ -135,7 +135,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','barometre-tercer-sector.zip'], cb);
+	return del(['dist','barometre-tecer-sector-social.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
@@ -166,7 +166,7 @@ gulp.task('do-zip', function(cb){
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-        .pipe(zip('barometre-tercer-sector.zip'))
+        .pipe(zip('barometre-tecer-sector-social.zip'))
         .pipe(gulp.dest('./'));
 });
 
