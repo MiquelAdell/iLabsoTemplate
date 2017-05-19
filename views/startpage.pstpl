@@ -24,22 +24,16 @@
 </head>
 <body class="default lang-{SURVEYLANGUAGE} {SURVEYFORMAT}">
 
-
-
-	<nav class="navbar navbar-default navbar-fixed-top" id="topsurveymenubar">
-        <div class="navbar-header col-xs-12 col-sm-12 col-lg-12">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <span class="navbar-brand col-xs-10 col-sm-12" >{SURVEYNAME}</span>
+    <nav class="navbar navbar-default navbar-fixed-top" id="topsurveymenubar">
+        <div class="navbar-header col-xs-12">
+            <div class="navbar-brand col-xs-12" >
+            <div class="logo"></div>
+            <div class="brand-text">{SURVEYNAME}</div>
+            <div class="logo-2"></div>
+            </div>
         </div>
 
-        <div id="navbar" class="navbar-collapse collapse col-xs-12">
-            <ul class="nav navbar-nav">
-            </ul>
+        <div id="navbar" class="navbar col-xs-12">
             <ul class="nav navbar-nav navbar-right">
                 {SAVE_LINKS}
                 {CLEARALL_LINKS}
@@ -48,21 +42,24 @@
         </div><!--/.nav-collapse -->
     </nav>
 
-	<!-- Top container -->
-	<div id="topContainer" class="jumbotron">
-		<div class="container">
-			{PERCENTCOMPLETE}
-			{LANGUAGECHANGER}
-		</div>
-	</div>
+    <div class="parallax-window" data-parallax="scroll" data-image-src="{TEMPLATEURL}/dist/images/parallax.jpg?f"></div>
 
-	<div class="outerframe container" id="outerframeContainer">
 
-		<div class="row" id="main-row">
+    <!-- Top container -->
+    <div id="topContainer" class="jumbotron">
+        <div class="container">
+            {PERCENTCOMPLETE}
+            {LANGUAGECHANGER}
+        </div>
+    </div>
 
-			<div class='col-xs-12' id="yii-flash-message">
-				{FLASHMESSAGE}
-			</div>
+    <div class="outerframe container" id="outerframeContainer">
 
-			<div class="col-sm-12 col-centered" id="main-col">
+        <div class="row" id="main-row">
+
+            <div class='col-xs-12' id="yii-flash-message">
+                {FLASHMESSAGE}
+            </div>
+
+            <div class="col-sm-12 col-centered" id="main-col">
 <!-- end of startpage.pstl -->

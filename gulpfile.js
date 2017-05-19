@@ -5,7 +5,6 @@
 // Define dependencies
 var autoprefixer   = require('gulp-autoprefixer');
 var browserSync    = require('browser-sync').create();
-var cheerio        = require('gulp-cheerio');
 var concat         = require('gulp-concat');
 var cleanCSS       = require('gulp-clean-css');
 var del            = require('del');
@@ -136,7 +135,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('clean', function(cb){
-	return del(['dist','*.zip'], cb);
+	return del(['dist','barometre-tecer-sector-social.zip'], cb);
 });
 
 gulp.task('build', function (cb) {
@@ -148,7 +147,6 @@ gulp.task('zip', function (cb) {
 });
 
 gulp.task('do-zip', function(cb){
-
 	return gulp
 		.src(
 			[
@@ -162,24 +160,14 @@ gulp.task('do-zip', function(cb){
 				'!test/',
 				'!test/**',
 				'!.*',
-				'!*.zip',
 				'!gulpfile.js',
 				'!package.json',
 				'!bower.json',
 				'!./dist/fonts/FontAwesome.otf'
 			]
 		)
-		.pipe(
-			// zip(
-			// 	gulp.src(['config.xml'])
-			// 		.pipe(cheerio(function ($, file) {
-			// 			console.log($('config metadatas name').text());
-			// 			return $('config metadatas name').text();
-			// 		}))+
-			// '.zip')
-			zip('confederacio.zip')
-		)
-		.pipe(gulp.dest('./'));
+        .pipe(zip('barometre-tecer-sector-social.zip'))
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', ['build']);
